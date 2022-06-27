@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins&display=swap');
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+p,div{
+    font-family:'Poppins','Noto Sans KR','돋움','Dotum','바탕','Batang','sans-serif'
+}
+
+#fullpage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+
+.fullsection{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* 배너 슬라이드 */
+#slideBox{
+    width: 100%;
+    height: 100%;
+}
+
+#slideWrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide{
+    float: left;
+}
+
+.slide:not(:first-of-type){
+    display: none;
+}
+
+.imgWrap{
+    width: 100%;
+    height: 100%;
+
+}
+
+#slide_1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../img/banner_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    display: block;
+}
+#slide_2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../img/banner_2.png);
+    background-repeat: no-repeat;
+    background-position: 80% ;
+    background-position: center;
+    display: block;
+    display: none;
+}
+
+#slide_3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../img/banner_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 배너 십자가 */
+.crossBox{
+    width: 100%;
+    height: 100%; 
+    position: relative;
+}
+
+.cross{
+    height:30%;
+    background: red;
+    opacity: 0.5;
+}
+
+#slide_1 .cross_1{
+    transform: rotate(90deg) translateX(35%) ;
+}
+
+#slide_1 .cross_2{
+    width: 100%;
+    transform: rotate(90deg)translateX(5%);
+}
+
+#slide_1 .cross_3{
+    width: 50%;
+    transform:translatey(-70%);
+}
+
+#slide_1 .cross_4{
+    width: 50%;
+    transform:translatey(-170%);
+}
+
+#slide_2 .cross_1{
+    transform:scale(70%) rotate(45deg) translateX(20%) translateY(230%);
+}
+
+#slide_2 .cross_2{
+    transform:scale(70%) rotate(-45deg)translateX(1%) translateY(104%);
+}
+
+#slide_2 .cross_3{
+    width: 40%;
+    transform: scale(70%)rotate(-45deg) translatey(-79%) translateX(61%);
+}
+
+#slide_2 .cross_4{
+    width: 40%;
+    transform: scale(70%) rotate(45deg) translatey(-380%)translateX(-61%);
+}
+#slide_3 .cross_1{
+    transform: rotate(90deg) translateX(33%) ;
+}
+
+#slide_3 .cross_2{
+    transform: rotate(90deg)translateX(5%);
+}
+
+#slide_3 .cross_3{
+    transform:translatey(-70%);
+}
+
+#slide_3 .cross_4{
+    transform:translatey(-170%);
+}
+
+/* 배너 택스트 */
+.textBox{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 10%;
+    color:white;
+}
+
+#slide_1 .textBox>p:first-child{
+    font-size: 5em;
+    font-weight: 800;
+}
+
+#slide_2 .textBox>p:first-child{
+    font-size: 3em;
+    font-weight: 800;
+    color: #131313;
+}
+
+.textBox>p:nth-child(2){
+    font-size: 2em;
+}
+
+.bannerBtn{
+    width: 200px;
+    height: 70px;
+    background: transparent;
+    border: 1px solid white;
+    margin-top: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerBtn:hover{
+    color: red;
+    background: white;
+}
+
+
