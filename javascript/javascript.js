@@ -53,14 +53,14 @@ function slide(){
     }
     $(".slide").eq(i).stop().fadeIn("fast").addClass("on").siblings().removeClass("on");
     $(".slide").eq(i-1).stop().fadeOut("fast");
-}
+};
 
 setInterval(slide,3000)
 
 //십자가
 $(document).ready(function(){
-    $(".cross").css("width",$(window).height())
-})
+    $(".cross").css("width",$(window).height());
+});
 
 //네비게이션
 $(function(){
@@ -71,40 +71,44 @@ $(function(){
 		$(".nav_sub").stop().slideUp("fast");
 		$("#nav_wrap, .nav_sub").css({"backgroundColor":"","opacity":""})
 	})
-})
+});
 
-$(".sub>li").css({"width":$("nav>ul>li").width()})
+$(".sub>li").css({"width":$("nav>ul>li").width()});
 
 //서비스섹션 슬라이드
-$(".slides").css({"width":$(window).width()})
+$(".slides").css({"width":$(window).width()});
 
 var slideLeft = $(".slides").width();
 
 function prev(){
 	$(".slides:last").prependTo("#slideWrap_2");
 	$("#slideWrap_2").css("margin-left",slideLeft);
-	$("#slideWrap_2").stop().animate({marginLeft:0},800);
-}
+	$("#slideWrap_2").stop().animate({marginLeft:0},700);
+	$("span").eq(0).text("0"+$(".slides").eq(0).attr('id').substr(7,1));
+	$("#progressBar").css({"width":$("span:first").text()*"25"+"%"});
+};
 
 function next(){
-	$("#slideWrap_2").stop().animate({marginLeft:-slideLeft},800,function(){;
+	$("#slideWrap_2").stop().animate({marginLeft:-slideLeft},700,function(){;
 		$(".slides:first").appendTo("#slideWrap_2");
 		$("#slideWrap_2").css("margin-left",0);
-	})
-}
+	});
+	$("span").eq(0).text("0"+$(".slides").eq(1).attr('id').substr(7,1));
+	$("#progressBar").css({"width":$("span:first").text()*"25"+"%"});
+};
 
 $("#prev").click(function(){
-	prev()
+	prev();
+	
 });
 
 $("#next").click(function(){
-	next()
+	next();
 });
 
-
-$("span").eq(0).text($(".slides").length);
-$("span").eq(1).text($(".slides").length);
-
-
-
 // setInterval(next,3000)
+
+//페이지번호
+$("span").eq(1).text("0"+$(".slides").length);
+
+
