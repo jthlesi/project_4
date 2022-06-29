@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins&display=swap');
 
-p,div{
+p,div,h2,span{
     font-family:'Poppins','Noto Sans KR','돋움','Dotum','바탕','Batang','sans-serif'
 }
 
@@ -27,8 +27,8 @@ html, body{
 
 .page{
     position: fixed;
-    right:20px;
-    top:50%;
+    right: 45px;
+    top: 50%;
     transform: translateY(-50%);
     z-index: 100;
 }
@@ -36,14 +36,90 @@ html, body{
 .page li{
     width: 10px;
     height: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 50%;
     cursor: pointer;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 li.active{
-    background: white;
+    transition: 1s all ease;
+    background: red;
+}
+
+/* 네비게이션 */
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#nav_wrap{
+    width: 100%;
+    height: 100px;
+}
+
+.wrap{
+    width:1420px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    width:100px;
+    height: 60px;
+    background-image: url(../img/22-1.ai);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    width:calc(100% - 300px);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav>ul{
+    width: 100%;
+    position: relative;
+}
+
+nav>ul>li{
+    width:calc(100% / 6);
+    float: left;
+}
+
+nav a{
+    color: white;
+    font-size: 1.2em;
+}
+
+.sub>li{
+    color: white;
+    line-height: 2.5em;
+    cursor: pointer;
+}
+
+.nav_sub{
+    width: 100%;
+    position: absolute;
+    top:100px;
+    left: 0;
+    display: none;
+    border-top: 1px solid white;
+}
+
+.nav_sub>.wrap{
+    justify-content: right;
+    align-items: flex-start;
 }
 
 /* 배너 슬라이드 */
@@ -60,41 +136,38 @@ li.active{
 
 .slide{
     transition: 0.5s;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top:0;
 }
 
 .slide:not(:first-of-type){
     display: none;
 }
 
+
 .imgWrap{
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #slide_1{
-    height: 100%;
-    position: relative;
     background-image: url(../img/banner_1.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
+
 #slide_2{
-    height: 100%;
-    position: relative;
-    background-image: url(../img/banner_2.png);
-    background-repeat: no-repeat;
-    background-position: 80% ;
+    background-image: url(../img/banner_2.webp);
+    background-size: cover;
     background-position: center;
 }
 
 #slide_3{
-    height: 100%;
-    position: relative;
     background-image: url(../img/banner_3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 /* 배너 십자가 */
@@ -112,31 +185,31 @@ li.active{
 }
 
 #slide_1.on .cross_1{
-    transform: rotate(90deg) translateX(328px);
+    transform: rotate(90deg) translateX(35%);
 }
 
 #slide_1.on .cross_2{
-    transform: rotate(0deg) translateY(15%);
+    transform: rotate(0deg) translateY(30%);
 }
 
 #slide_2.on .cross_1{
-    transform: rotate(45deg) translateX(220px) translateY(260px);
+    transform: rotate(45deg) translateX(25%) translateY(85%);
 }
 
 #slide_2.on .cross_2{
-    transform: rotate(-45deg) translateX(-60px) translateY(20px);
+    transform: rotate(-45deg) translateX(-5%) translateY(15%);
 }
 
 #slide_3.on .cross_1{
-    transform: rotate(0deg) translateY(115%);
+    transform: rotate(0deg) translateY(130%);
 }
 
 #slide_3.on .cross_2{
-    transform: rotate(90deg) translateX(48px) translateY(10%);
+    transform: rotate(90deg) translateX(5%) translateY(10%);
 }
 
 
-/* 배너 택스트 */
+/* 배너 텍스트 */
 .textBox{
     position: absolute;
     top:50%;
@@ -148,17 +221,25 @@ li.active{
 .textBox>p:first-child{
     font-size: 5em;
     font-weight: 800;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red
 }
 
 .textBox>p:nth-child(2){
     font-size: 2em;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red
+
+}
+
+#slide_2 .textBox>p:first-child{
+    font-size: 5em;
+    font-weight: 800;
 }
 
 .bannerBtn{
     width: 200px;
     height: 70px;
     background: transparent;
-    border: 1px solid white;
+    border: 2px solid white;
     margin-top: 50px;
     cursor: pointer;
     color: white;
@@ -166,18 +247,128 @@ li.active{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red
+
 }
 
 .bannerBtn:hover{
     color: red;
     background: white;
+    text-shadow: none;
 }
 
 /* 2번섹션 */
-#service{
-    background: firebrick;
+#serviceSlide{
+    width: 100%;
+    height: 100%;
 }
 
+#slideWrap_2{
+    width:400%;
+    height: 100%;
+}
+
+.slides{
+    height: 100%;
+    float:left;
+}
+
+h2{
+    position: absolute;
+    top:130px;
+    left:100px;
+    font-size: 4em;
+}
+
+.serviceTxt{
+    width: 40%;
+    height: 100%;
+    float: left;
+    background: white;
+}
+
+.serviceTxt>h3{
+    position: relative;
+    top:55%;
+    left:100px;
+    font-size: 2.5em;
+}
+
+.serviceTxt>p{
+    position: relative;
+    top:55%;
+    left:100px;
+    font-size: 1.5em;
+}
+
+#searchBtn{
+    position: relative;
+    top:60%;
+    left: 100px;
+    width:300px;
+    height: 50px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#searchBtn:hover{
+    color: white;
+    background: red;
+}
+
+.serviceImg{
+    width: 60%;
+    height: 100%;
+    background:forestgreen;
+    float: left;
+}
+
+#controller{
+    width: 30%;
+    height: 100px;
+    position: absolute;
+    top:80%;
+    left:100px;
+    background: fuchsia;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#idxCount{
+    width: 80px;
+    height: 50px;
+    font-size: 2em;
+}
+
+#controller>ul{
+
+}
+
+#controller>ul>li{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background: #e2dfdf;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#next{
+    border-radius: 0 50% 50% 0;
+}
+
+#prev{
+    border-radius: 50% 0 0 50%;
+}
 /* 3번섹션 */
 #text{
     background: antiquewhite;
