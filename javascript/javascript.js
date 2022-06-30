@@ -28,7 +28,6 @@ $(document).ready(function(){
     $(window).on('scroll touchmove mousewheel', function(event){
 		var pageActive = $(".page ul li.active");
 		var pageIndex = pageActive.index();
-		
 		if(event.originalEvent.wheelDelta >= 0) {
 			if(pageIndex > 0) {
 				pageActive.prev().addClass("active").siblings().removeClass("active");
@@ -82,7 +81,7 @@ var slideLeft = $(".slides").width();
 
 function prev(){
 	$(".slides:last").prependTo("#slideWrap_2");
-	$("#slideWrap_2").css("margin-left",slideLeft);
+	$("#slideWrap_2").css("margin-left",-slideLeft);
 	$("#slideWrap_2").stop().animate({marginLeft:0},700);
 	$("span").eq(0).text("0"+$(".slides").eq(0).attr('id').substr(7,1));
 	$("#progressBar").css({"width":$("span:first").text()*"25"+"%"});
@@ -99,7 +98,6 @@ function next(){
 
 $("#prev").click(function(){
 	prev();
-	
 });
 
 $("#next").click(function(){
@@ -109,6 +107,29 @@ $("#next").click(function(){
 // setInterval(next,3000)
 
 //페이지번호
+$("span").eq(0).text("0"+$(".slides").eq(0).attr('id').substr(7,1));
 $("span").eq(1).text("0"+$(".slides").length);
+
+
+//5번섹션
+var arrImg=["back_1.jpg","back_2.jpg","back_3.webp","back_4.jpg",]
+
+$(".countBox").mouseenter(function(){
+	var currentIdx =$(".countBox").index(this);
+	$(this).css({"backgroundColor":"red"});
+	$("#count").css({"backgroundImage":'url(../img/'+arrImg[(currentIdx)]+')'});
+	$("p:first", this).css({"color":"white"});
+	$(".bar", this).css({"backgroundColor":"white"});
+}).mouseleave(function(){
+	$(this).css({"backgroundColor":"transparent",});
+	$("#count").css({"backgroundImage":'url(../img/back.jpg)'});
+	$("p:first", this).css({"color":"red"});
+	$(".bar", this).css({"backgroundColor":"red"});
+})
+
+window.onresize = function () {
+	document.location.reload();
+  };
+
 
 

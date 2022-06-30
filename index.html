@@ -15,7 +15,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 </head>
 
-<body>
+<body onload="document.body.scrollTop=document.cookie" onunload="document.cookie=document.body.scrollTop">
     <header>
         <div id="nav_wrap">
             <div class="wrap">
@@ -123,8 +123,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -138,25 +136,37 @@
                             <p>헌혈의 집은 어디에 있나요?</p>
                             <div id="searchBtn">가까운 헌혈의집 찾기<i class="fa-solid fa-magnifying-glass"></i></div>
                         </div>
-                        <div class="serviceImg">1</div>
+                        <div class="serviceImg"></div>
                     </div>
                     <div id="sSlide_2" class ="slides">
-                        <div class="serviceTxt">2</div>
-                        <div class="serviceImg">2</div>
+                        <div class="serviceTxt">
+                            <h3>헌혈예약</h3>
+                            <p>온라인 예약하고 대기시간 아끼기</p>
+                            <div id="searchBtn">헌혈 예약하기<i class="fa-solid fa-calendar-days"></i></div>
+                        </div>
+                        <div class="serviceImg"></div>
                     </div>
                     <div id="sSlide_3" class ="slides">
-                        <div class="serviceTxt">3</div>
-                        <div class="serviceImg">3</div>
+                        <div class="serviceTxt">
+                            <h3>전자문진</h3>
+                            <p>헌혈전 꼭 해야하는 전자문진을<br>미리 진행 할 수 있습니다</p>
+                            <div id="searchBtn">전자문진 하러가기<i class="fa-solid fa-pen-to-square"></i></div>
+                        </div>
+                        <div class="serviceImg"></div>
                     </div>
                     <div id="sSlide_4" class ="slides">
-                        <div class="serviceTxt">4</div>
-                        <div class="serviceImg">4</div>
+                        <div class="serviceTxt">
+                            <h3>자진배제 /<br>혈액 사용보류 신청</h3>
+                            <p>헌혈전 문진내용에 사실과 다르게 응답하거나 헌혈 후 발생한 질환으로 인해<br>수혈자의 안전을 지키기 위해서는 헌혈자의 연락이 반드시 필요합니다</p>
+                            <div id="searchBtn">자진배제 신청<i class="fa-solid fa-pen-to-square"></i></div>
+                        </div>
+                        <div class="serviceImg"></div>
                     </div>
                 </div>
             </div>
             <div id="controller">
                 <div id="idxCount">
-                    <span>01</span><p>/</p><span></span>
+                    <span></span><p>/</p><span></span>
                 </div>
                 <div id="progressWrap">
                     <div id="progressBar"></div>
@@ -167,9 +177,63 @@
                 </ul>
             </div>
         </section>
-        <section id="text" class="fullsection">3</section>
-        <section id="count" class="fullsection">4</section>
-        <section id="news" class="fullsection">5</section>
+        <section id="text" class="fullsection">
+            <div id="textWrap">
+                <h2>생명을 살리는 사람, 바로 우리</h2>
+                <p>혈액 사업을 통한 인도주의의 실현, 세계평화와 인류복지에 공헌</p>
+                <p>함께 만드는 즐거운 헌혈, 안전한 수혈, 더 나은 미래</p>
+            </div>
+        </section>
+        <section id="count" class="fullsection">
+            <div id="countWrap">
+                <div class="countBox" id="box_1">
+                    <p>설립년도</p>
+                    <span class="bar"></span>
+                    <p>1958<span>년</span></p>
+                    <p>국민과 혈액사업 구성원의 생명보호와<br>안전을 경영의 최우선 가치로 하고 있습니다</p>
+                </div>
+                <div class="countBox" id="box_2">
+                    <p>누적 헌혈자 수</p>
+                    <span class="bar"></span>
+                    <p>45,321,479<span>건</span></p>
+                    <p>사랑의 실천이자 생명을 나누는<br>고귀한 행위입니다</p>
+                </div>
+                <div class="countBox" id="box_3">
+                    <p>혈액 보유 현황</p>
+                    <span class="bar"></span>
+                    <p>48,498<span>팩</span></p>
+                    <p>혈액은 장기간 보존할 수 없습니다<br>그러므로 헌혈은 지속적으로 이루어져야만 합니다</p>
+                </div>
+                <div class="countBox" id="box_4">
+                    <p>1일 소요량</p>
+                    <span class="bar"></span>
+                    <p>5,029<span>팩</span></p>
+                    <p>헌혈은 수혈이 필요한 환자의<br>생명을 구하는 유일한 수단입니다</p>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="fullsection">
+            <div id="newsTxt">
+                <h2><span>혈액</span>관리본부의<br>새소식을<br>전해드립니다</h2>
+                <div class="newsBtn">더보기</div>
+            </div>
+            <div id="newsBoard">
+                <div id="board">
+                    <ul id="tabMenu">
+                        <li><a href="">오늘의 혈액보유량</a></li>
+                        <li><a href="">일반공지</a></li>
+                        <li><a href="">보도자료</a></li>
+                        <li><a href="">언론보도</a></li>
+                    </ul>
+                    <div id="tabWrap">
+                        <div class="tabs" id="tab_1"></div>
+                        <div class="tabs" id="tab_2"></div>
+                        <div class="tabs" id="tab_3"></div>
+                        <div class="tabs" id="tab_4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="footer" class="fullsection">6</section>
     </div>
     <script src="javascript/javascript.js"></script>
