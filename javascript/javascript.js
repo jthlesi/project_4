@@ -117,12 +117,12 @@ var arrImg=["back_1.jpg","back_2.jpg","back_3.webp","back_4.jpg",]
 $(".countBox").mouseenter(function(){
 	var currentIdx =$(".countBox").index(this);
 	$(this).css({"backgroundColor":"red"});
-	$("#count").css({"backgroundImage":'url(../img/'+arrImg[(currentIdx)]+')'});
+	$("#count").css({"backgroundImage":'url(img/'+arrImg[(currentIdx)]+')'});
 	$("p:first", this).css({"color":"white"});
 	$(".bar", this).css({"backgroundColor":"white"});
 }).mouseleave(function(){
 	$(this).css({"backgroundColor":"transparent",});
-	$("#count").css({"backgroundImage":'url(../img/back.jpg)'});
+	$("#count").css({"backgroundImage":'url(img/back.jpg)'});
 	$("p:first", this).css({"color":"red"});
 	$(".bar", this).css({"backgroundColor":"red"});
 })
