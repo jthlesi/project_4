@@ -15,7 +15,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 </head>
 
-<body onload="document.body.scrollTop=document.cookie" onunload="document.cookie=document.body.scrollTop">
+<body>
     <header>
         <div id="nav_wrap">
             <div class="wrap">
@@ -185,7 +185,7 @@
             </div>
         </section>
         <section id="count" class="fullsection">
-            <div id="countWrap">
+            <div class="countWrap">
                 <div class="countBox" id="box_1">
                     <p>설립년도</p>
                     <span class="bar"></span>
@@ -217,24 +217,159 @@
                 <h2><span>혈액</span>관리본부의<br>새소식을<br>전해드립니다</h2>
                 <div class="newsBtn">더보기</div>
             </div>
-            <div id="newsBoard">
-                <div id="board">
-                    <ul id="tabMenu">
-                        <li><a href="">오늘의 혈액보유량</a></li>
-                        <li><a href="">일반공지</a></li>
-                        <li><a href="">보도자료</a></li>
-                        <li><a href="">언론보도</a></li>
-                    </ul>
-                    <div id="tabWrap">
-                        <div class="tabs" id="tab_1"></div>
-                        <div class="tabs" id="tab_2"></div>
-                        <div class="tabs" id="tab_3"></div>
-                        <div class="tabs" id="tab_4"></div>
+            <div id="newsSlide">
+                <div id="newsSlideWrap">
+                    <div id="newsSlides">
+                        <ul id="newsSlideBox">
+                            <li class="newsContents" id="news_01">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>보도자료</p>
+                                    <h3>2022년 헌혈자의 날」 기념행사 개최</h3>
+                                    <p>2022-06-14</p>
+                                </div>
+                            </li>
+                            <li class="newsContents" id="news_02">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>공지사항</p>
+                                    <h3>모바일 운전면허 신분확인서비스 허용기간 연장 안내</h3>
+                                    <p>2022-06-23</p>
+                                </div>
+                            </li>
+                            <li class="newsContents" id="news_03">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>공지사항</p>
+                                    <h3>[인천]7월 전혈 프로모션 안내</h3>
+                                    <p>2022-07-01</p>
+                                </div>
+                            </li>
+                            <li class="newsContents" id="news_04">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>공지사항</p>
+                                    <h3>[울산]6.29(수)-6.30(목) 헌혈의집 일부 미운영 안내</h3>
+                                    <p>2022-06-28</p>
+                                </div>
+                            </li>
+                            <li class="newsContents" id="news_05">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>언론보도</p>
+                                    <h3>코로나 백신 접종자 혈액, 수혈자에도 백신 효과 나타난다?</h3>
+                                    <p>2022-06-22</p>
+                                </div>
+                            </li>
+                            <li class="newsContents" id="news_06">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>언론보도</p>
+                                    <h3>헌혈자의 날 기념우표 발행</h3>
+                                    <p>2022-06-14</p>
+                                </div>
+                            </li>
+                            <li class="newsContents" id="news_07">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>언론보도</p>
+                                    <h3>40년간 597번 헌혈한 70대…‘헌혈 정년’ 채웠다</h3>
+                                    <p>2022-06-14</p>
+                                </div>
+                            </li>
+                            <li class="newsContents" id="news_08">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>언론보도</p>
+                                    <h3>혈액보유량 적정 수준이지만, 꾸준한 헌혈 필요</h3>
+                                    <p>2022-06-08</p>
+                                </div>
+                            </li>
+                            <li class="newsContents" id="news_09">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>공지사항</p>
+                                    <h3>[전국]코로나19 관련 헌혈금지기간 안내</h3>
+                                    <p>2022-03-30</p>
+                                </div>
+                            </li>
+                            <li class="newsContents" id="news_10">
+                                <div class="newsImgBox">
+                                    <div class="newsImg">
+                                    </div>
+                                </div>
+                                <div class="newsTxtBox">
+                                    <p>언론보도</p>
+                                    <h3>'목포 30대 자매 100회 헌혈' 유공장 수상…헌혈증 기증</h3>
+                                    <p>2022-05-31</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="controller_2">
+                        <div id="idxCount_2">
+                            <span></span><p>/</p><span></span>
+                        </div>
+                        <div id="progressWrap_2">
+                            <div id="progressBar_2"></div>
+                        </div>
+                        <ul>
+                            <li id="prev_2"><i class="fa-solid fa-angle-left"></i></li>
+                            <li id="next_2"><i class="fa-solid fa-angle-right"></i></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="footer" class="fullsection">6</section>
+        <section id="footer" class="fullsection">
+            <div id ="footerImg">
+                <div class="footerWrap">
+                <div id="leftImg">
+                    <h2>안전보건 경영</h2>
+                    <p>『생명을 살리는 사람, 바로 우리』라는 슬로건과 함께<br>
+                        국민과 혈액사업 구성원의 생명보호와 안전을 경영의 최우선 가치로 하고 있습니다</p>
+                </div>
+            </div>
+            <div class="footerWrap">
+                <div id="rightImg">
+                    <h2>IR 자료</h2>
+                    <p>투명하고 정직한 경영을 통해 철저한 책임의식과 적극적 의무이행으로<br>
+                        안전하고 선진화된 무재해 혈액사업 환경 마련을 위해을 이루어 나갑니다</p>
+
+                </div>
+            </div>
+            </div>
+            <div id="footerTxt">
+
+            </div>
+        </section>
     </div>
     <script src="javascript/javascript.js"></script>
 </body>

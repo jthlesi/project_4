@@ -387,13 +387,13 @@ nav a{
     float: left;
     width: 40px;
     height: 40px;
-    margin-left: 5px;
-    background: #e2dfdf;
+    background: white;
     font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border: #e2dfdf 1px solid;
 }
 
 #next{
@@ -479,7 +479,7 @@ nav a{
     background-attachment: fixed;
 }
 
-#countWrap{
+.countWrap{
     width: 100%;
     height: 100%;
     display: flex;
@@ -546,7 +546,7 @@ nav a{
     align-items: center;
 }
 
-#newsBoard{
+#newsSlide{
     width: 70%;
     height: 100%;
 }
@@ -579,48 +579,214 @@ nav a{
     color: white;
 }
 
-#newsBoard{
-    width:80%;
-    height: 80%;
-    background: forestgreen;
-    margin:auto;
-}
-
-#board{
+#newsSlideWrap{
     width: 80%;
     height: 80%;
+    margin: 10%;
+    overflow: hidden;
+}
+
+#newsSlides{
+    width:1000%;
+    height: 50%;
+    margin-top: 15%;
+}
+
+#newsSlideBox{
+    width:100%;
+    height: 100%;
+
+}
+
+.newsContents{
+    float: left;
+    height: 100%;
+}
+
+.newsImgBox{
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.newsImgBox:hover .newsImg{
+    transform: scale(1.2);
+}
+
+.newsImg{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all ease;
+}
+.newsTxtBox{
+    width: 90%;
+    height: 40%;
     margin: auto;
 }
 
-#tabMenu{
-    width: 100%;
-    height: 100px;
-    background: orange;
+#news_01 .newsImg{
+    background: url(../img/news_1.jpg) center /cover no-repeat;
+}
+#news_02 .newsImg{
+    background: url(../img/news_2.jpg) center /cover no-repeat;
+}
+#news_03 .newsImg{
+    background: url(../img/news_3.jpg) center /cover no-repeat;
+}
+#news_04 .newsImg{
+    background: url(../img/news_4.jpg) center /cover no-repeat;
+}
+#news_05 .newsImg{
+    background: url(../img/news_5.jpg) center /cover no-repeat;
+}
+#news_06 .newsImg{
+    background: url(../img/news_6.jpg) center /cover no-repeat;
+}
+#news_07 .newsImg{
+    background: url(../img/news_7.jpg) center /cover no-repeat;
+}
+#news_08 .newsImg{
+    background: url(../img/news_8.jpg) center /cover no-repeat;
+}
+#news_09 .newsImg{
+    background: url(../img/news_9.jpg) center /cover no-repeat;
+}
+#news_10 .newsImg{
+    background: url(../img/news_10.jpg) center /cover no-repeat;
 }
 
-#tabMenu li{
+.newsTxtBox p:first-of-type{
+    color:#119891;
+}
+.newsTxtBox p:last-of-type{
+    margin-top: 10px;
+    color:#999999;
+}
+
+#controller_2{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#idxCount_2{
+    width: 80px;
+    height: 50px;
+    font-size: 2em;
+}
+
+#controller_2 p{
+    display: inline;
+    font-size: 0.8em;
+}
+
+#controller_2 span{
+    font-size:0.8em;
+    margin: 0 5px;
+    letter-spacing: 0.1em;
+}
+
+#controller_2 span:first-of-type{
+    font-size:0.8em;
+    color:black;
+    font-weight: 900;
+}
+
+#controller_2>ul>li{
     float: left;
-    width: 200px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: #e2dfdf 1px solid;
 }
 
-#tabWrap{
-    width: 100%;
-    height: calc(100% - 100px);
+#next_2{
+    border-radius: 0 50% 50% 0;
 }
 
-.tabs:not(:first-of-type){
-    display: none;
+#prev_2{
+    border-radius: 50% 0 0 50%;
 }
 
-.tabs{
-    width: 100%;
-    height: 100%;
-    background: fuchsia;
+#progressWrap_2{
+    width: 80%;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid red;
+    margin-left: 20px;
 }
+
+#progressBar_2{
+    width:10%;
+    height:9px;
+    background: red;
+    transition: 0.5s all ease;
+}
+
+
+
 
 /* 6번섹션 */
-#footer{
-    background: turquoise;
+#footerImg{
+    margin-top: 10%;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    color: white;
+}
+
+.footerWrap{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s all ease;
+}
+
+
+#leftImg{
+    width:100%;
+    height: 100%;
+    background: url(../img/left_img.jpg) center /cover no-repeat;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s all ease;
+}
+
+#footerImg h2{
+    font-size: 2em;
+    margin-left:70px;
+}
+#footerImg p{
+    margin-top: 10px;
+    font-size: 1em;
+    margin-left: 70px;
+}
+
+#rightImg{
+    width:100%;
+    height: 100%;
+    background: url(../img/right_img.jpg) center /cover no-repeat;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s all ease;
+}
+
+#footerTxt{
+    width: 100%;
+    height: 40%;
+    background: rebeccapurple;
 }
 

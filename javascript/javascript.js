@@ -42,6 +42,10 @@ $(document).ready(function(){
 	});
 });
 
+window.onresize = function () {
+	document.location.reload();
+  };
+
 //슬라이드
 var i=0;
 
@@ -111,25 +115,94 @@ $("span").eq(0).text("0"+$(".slides").eq(0).attr('id').substr(7,1));
 $("span").eq(1).text("0"+$(".slides").length);
 
 
-//5번섹션
+//4번섹션
 var arrImg=["back_1.jpg","back_2.jpg","back_3.webp","back_4.jpg",]
 
-$(".countBox").mouseenter(function(){
+function enterDelay(){
+	$(".countWrap").addClass("delay");
+}
+
+$(window).on("click", function () {
+	if ($(".page>ul>li").eq(3).hasClass("active") == true) {
+		setTimeout(enterDelay,1000)
+	} else {
+		$(".countWrap").removeClass("delay");
+	}
+});
+
+$(window).on("mousewheel touchmove", function () {
+	if ($(".page>ul>li").eq(3).hasClass("active") == true) {
+		$(".countWrap").removeClass("delay");
+	} else {
+		setTimeout(enterDelay,1000)
+	}
+});
+
+$(document).on("mouseenter",".countWrap.delay .countBox",function(){
 	var currentIdx =$(".countBox").index(this);
 	$(this).css({"backgroundColor":"red"});
-	$("#count").css({"backgroundImage":'url(img/'+arrImg[(currentIdx)]+')'});
+	$("#count").css({"backgroundImage":'url(img/'+arrImg[currentIdx]+')'});
 	$("p:first", this).css({"color":"white"});
 	$(".bar", this).css({"backgroundColor":"white"});
-}).mouseleave(function(){
+})
+$(document).on("mouseleave", ".countWrap.delay .countBox",function(){
 	$(this).css({"backgroundColor":"transparent",});
 	$("#count").css({"backgroundImage":'url(img/back.jpg)'});
 	$("p:first", this).css({"color":"red"});
 	$(".bar", this).css({"backgroundColor":"red"});
 })
 
-window.onresize = function () {
-	document.location.reload();
-  };
+
+//5번섹션
+
+$(".newsContents").css({"width":$("#newsSlideWrap").width()/3});
+
+var slideLeft_2 = $(".newsContents").width();
+
+function prev_2(){
+	$(".newsContents:last").prependTo("#newsSlideBox");
+	$("#newsSlideBox").css("margin-left",-slideLeft_2);
+	$("#newsSlideBox").stop().animate({marginLeft:0},700);
+	$("#idxCount_2>span").eq(0).text($(".newsContents").eq(0).attr('id').substr(5,2));
+	$("#progressBar_2").css({"width":$("#idxCount_2>span:first").text()*"10"+"%"});
+};
+
+function next_2(){
+	$("#newsSlideBox").stop().animate({marginLeft:-slideLeft_2},700,function(){;
+		$(".newsContents:first").appendTo("#newsSlideBox");
+		$("#newsSlideBox").css("margin-left",0);
+	});
+	$("#idxCount_2>span").eq(0).text($(".newsContents").eq(1).attr('id').substr(5,2));
+	$("#progressBar_2").css({"width":$("#idxCount_2>span:first").text()*"10"+"%"});
+};
+
+$("#prev_2").click(function(){
+	prev_2();
+});
+
+$("#next_2").click(function(){
+	next_2();
+});
 
 
+$("#idxCount_2>span").eq(0).text($(".newsContents").eq(0).attr('id').substr(5,2));
+$("#idxCount_2>span").eq(1).text($(".newsContents").length);
 
+
+//footer
+
+$("#leftImg").hover(function(){
+	$("#leftImg").css({"width":"105%"}).parent().css({"width":"55%"});
+	$("#rightImg").parent().css({"width":"45%"});
+}, function(){
+	$("#leftImg").css({"width":"100%"}).parent().css({"width":"50%"});
+	$("#rightImg").parent().css({"width":"50%"});
+});
+
+$("#rightImg").hover(function(){
+	$("#rightImg").css({"width":"105%"}).parent().css({"width":"55%"});
+	$("#leftImg").parent().css({"width":"45%"});
+}, function(){
+	$("#rightImg").css({"width":"100%"}).parent().css({"width":"50%"});
+	$("#leftImg").parent().css({"width":"50%"});
+});
