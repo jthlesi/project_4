@@ -1,0 +1,337 @@
+@media (max-width:599px) {
+    
+}
+
+@media (min-width:600px) and (max-width:799px){
+    .wrap{
+        width: 100%;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .nav_sub{
+        display: none;
+    }
+    #hamWrap{
+        display: block;
+    }
+    
+    #ham{
+        display: block;
+    }
+
+    .slide{
+        background-position: right
+    }
+
+    .textBox>p:first-child{
+        font-size: 4em;
+    }
+ 
+    .textBox>p:nth-child(2){
+        font-size: 1.5em;
+    }
+
+    #service h2{
+        font-size: 2em;
+        left: 40px;
+    }
+
+    .serviceTxt>h3{
+        font-size: 1em;
+        left: 40px;
+    }
+
+    .serviceTxt>p{
+        width: 70%;
+        left: 40px;
+    }
+
+    #searchBtn{
+        width: 150px;
+        font-size: 0.8em;
+        left: 40px;
+    }
+
+    #controller{
+        left: 40px;
+    }
+
+    #controller span{
+        font-size:0.5em;
+    }
+    #controller span:first-of-type{
+        font-size:0.6em;
+    }
+
+    #idxCount{
+        width: 50px;
+    }
+
+    #controller p{
+        font-size: 0.5em;
+    }
+
+    #controller>ul>li{
+        width: 30px;
+        height: 30px;
+        font-size: 0.8em;
+    }
+    #progressWrap{
+        width: calc(100% - 150px);
+    }
+
+    #text h2{
+        font-size: 3em;
+    }
+    
+    #text p{
+        font-size: 1.2em;
+    }
+
+    .countWrap{
+        flex-wrap: wrap;
+        display: flex;
+   }
+
+    .countBox{
+        width: 50%;
+        height: 50%;
+    }
+    
+    #newsTxt h2{
+        position: relative;
+        font-size: 3em;
+        top:50px
+    }
+
+    .newsBtn{
+        width: 150px;
+        height: 50px;
+        left:68%;
+        top: -10px;
+        font-size: 1em;
+    }
+
+    .newsTxtBox h3{
+        font-size:1em;
+    }
+
+    #newsSlideWrap{
+        margin: 0% 10% ;
+        height: 100%;
+    }
+
+    #controller_2 p{
+        font-size: 1em;
+    }
+    
+    #controller_2 span{
+        font-size:1em;
+    }
+    
+    #controller_2 span:first-of-type{
+        font-size:1.1em;
+    }
+
+    #idxCount_2{
+        width: 60px;
+    }
+    
+    #controller_2>ul>li{
+        width: 30px;
+        height: 30px;
+    }
+
+    #progressWrap_2{
+        width: calc(100% - 180px);
+    }
+
+    .newsTxtBox p{
+        font-size: 0.9em;
+    }
+
+    .newsImgBox{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    #news{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #newsTxt{
+        width: 100%;
+        height: 50%;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-left: 40px;
+    }
+    
+    #newsSlide{
+        width: 100%;
+        height: 50%;
+    }
+
+    #newsSlides{
+        margin-top: 5%;
+    }
+
+    #controller_2{
+        margin-top: 15%;
+    }
+
+    #footerImg{
+        margin-top: 25%;
+    }
+
+    #footerImg h2{
+        margin-left:40px;
+    }
+
+    #footerImg p{
+        font-size: 1em;
+        margin-left: 40px;
+        width: 80%;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    #footTxtWrap ul{
+        margin: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: auto;
+    }
+
+    #footTxtWrap{
+        width: 100%;
+    }
+
+    #footTxtWrap p{
+        margin-left: 20px;
+    }
+    
+    #footTxtWrap ul li{
+        float: none;
+    }
+}
+
+@media (min-width:800px) and (max-width:1419px){
+    .wrap{
+        width: 100%;
+    }
+
+    nav a{
+        font-size: 1em;
+    }
+
+    #service h2{
+        font-size: 3em;
+    }
+
+    .serviceTxt>h3{
+        font-size: 1.5em;
+    }
+
+    .serviceTxt>p{
+        width: 50%;
+    }
+
+    #searchBtn{
+        width: 200px;
+    }
+
+    #progressWrap{
+        width:calc(100% - 200px);
+    }
+
+    #controller span{
+        font-size:0.6em;
+    }
+    #controller span:first-of-type{
+        font-size:0.7em;
+    }
+
+    .countBox p:first-of-type{
+        font-size: 1em;
+    }
+    
+    .countBox p:nth-of-type(2){
+        font-size: 2em;
+    }
+    
+    .countBox p:nth-of-type(2)>span{
+        font-size: 0.5em;
+    }
+    
+    .countBox p:nth-of-type(3){
+        font-size: 0.7em;
+    }
+
+    #newsTxt h2{
+        font-size: 3em;
+    }
+
+    .newsBtn{
+        width: 150px;
+        left:-70px;
+        font-size: 1em;
+    }
+
+    .newsTxtBox h3{
+        font-size:1em;
+    }
+
+    #newsSlideWrap{
+        width: 80%;
+        height: 80%;
+        margin: 25% 10% ;
+    }
+
+    #controller_2 p{
+        font-size: 1.2em;
+    }
+    
+    #controller_2 span{
+        font-size:1.2em;
+    }
+    
+    #controller_2 span:first-of-type{
+        font-size:1.5em;
+    }
+
+    #footerImg{
+        margin-top: 20%;
+    }
+
+    #footerImg h2{
+        margin-left:50px;
+    }
+
+    #footerImg p{
+        font-size: 0.8em;
+        margin-left: 50px;
+    }
+
+    .arrow{
+        display: none;
+    }
+    #footTxtWrap ul{
+        margin-left: 15px;
+    }
+
+    #footTxtWrap p{
+        margin-left: 15px;
+    }
+    
+
+}
+

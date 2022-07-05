@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,7 +30,15 @@
                         <li><a href="">홍보관</a></li>
                         <li><a href="">혈액관리본부 소개</a></li>
                     </ul>
+                    <div id="hamWrap">
+                        <div id="ham">
+                            <span id="ham_1"></span>
+                            <span id="ham_2"></span>
+                            <span id="ham_3"></span>
+                        </div>
+                    </div>
                 </nav>
+
             </div>
         </div>
         <div class="nav_sub">
@@ -40,7 +49,6 @@
                     <li>헌혈과정</li>
                     <li>헌혈관리시스템</li>
                     <li>혈액상식</li>
-
                 </ul>
                 <ul class="sub">
                     <li>헌혈의집 찾기</li>
@@ -76,6 +84,53 @@
                 </ul>
             </div>
         </div>
+        <ul class="navHam">
+            <li><a href="">헌혈지식</a>
+                <ul class="hamSub">
+                    <li>헌혈의 필요성</li>
+                    <li>오해와 진실</li>
+                    <li>헌혈과정</li>
+                    <li>헌혈관리시스템</li>
+                    <li>혈액상식</li>
+                </ul></li>
+            <li><a href="">헌혈참여</a>
+                <ul class="hamSub">
+                    <li>헌혈의집 찾기</li>
+                    <li>헌혈버스 찾기</li>
+                    <li>헌혈예약</li>
+                    <li>전자문진</li>
+                </ul></li>
+            <li><a href="">헌혈활동</a>
+                <ul class="hamSub">
+                    <li>ABO Friends</li>
+                    <li>나눔히어로즈</li>
+                    <li>단체헌혈</li>
+                    <li>조혈모세포 기증</li>
+                </ul></li>
+            <li><a href="">커뮤니티</a>
+                <ul class="hamSub">
+                    <li>감동이야기</li>
+                    <li>FAQ</li>
+                    <li>고객의 소리</li>
+                    <li>설문조사</li>
+                </ul></li>
+            <li><a href="">홍보관</a>
+                <ul class="hamSub">
+                    <li>세계헌혈자의 날</li>
+                    <li>헌혈홍보대사</li>
+                    <li>홍보물</li>
+                    <li>갤러리</li>
+                    <li>공모전</li>
+                </ul></li>
+            <li><a href="">혈액관리본부 소개</a>
+                <ul class="hamSub">
+                    <li>혈액관리본부 소개</li>
+                    <li>연혁</li>
+                    <li>조직도</li>
+                    <li>캐릭터</li>
+                    <li>오시는길</li>
+                </ul></li>
+        </ul>
     </header>
     <div id="fullpage">
         <div class="page">
@@ -349,25 +404,44 @@
             </div>
         </section>
         <section id="footer" class="fullsection">
-            <div id ="footerImg">
+            <div id="footerImg">
                 <div class="footerWrap">
-                <div id="leftImg">
-                    <h2>안전보건 경영</h2>
-                    <p>『생명을 살리는 사람, 바로 우리』라는 슬로건과 함께<br>
-                        국민과 혈액사업 구성원의 생명보호와 안전을 경영의 최우선 가치로 하고 있습니다</p>
+                    <div id="leftImg">
+                        <h2>안전보건 경영</h2>
+                        <p>『생명을 살리는 사람, 바로 우리』라는 슬로건과 함께<br>
+                            국민과 혈액사업 구성원의 생명보호와 안전을 경영의 최우선 가치로 하고 있습니다</p>
+                        <div class="arrow">
+                            <i class="fa-solid fa-right-long"></i>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="footerWrap">
-                <div id="rightImg">
-                    <h2>IR 자료</h2>
-                    <p>투명하고 정직한 경영을 통해 철저한 책임의식과 적극적 의무이행으로<br>
-                        안전하고 선진화된 무재해 혈액사업 환경 마련을 위해을 이루어 나갑니다</p>
-
+                <div class="footerWrap">
+                    <div id="rightImg">
+                        <h2>IR 자료</h2>
+                        <p>투명하고 정직한 경영을 통해 철저한 책임의식과 적극적 의무이행으로<br>
+                            안전하고 선진화된 무재해 혈액사업 환경 마련을 위해을 이루어 나갑니다</p>
+                        <div class="arrow">
+                            <i class="fa-solid fa-right-long"></i>
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
             <div id="footerTxt">
-
+                <div id="footTxtWrap">
+                    <div id="footLogo"></div>
+                    <ul>
+                        <li>개인정보처리방침</li>
+                        <li>이용약관</li>
+                        <li>책임의 한계와 법적고지</li>
+                        <li>이메일무단수집거부</li>
+                        <li>칭찬하기</li>
+                        <li>고객의 소리</li>
+                        <li>안전신문고</li>
+                        <li>윤리위반신고</li>
+                    </ul>
+                    <p>26465 강원도 원주시 혁신로 50 대한적십자사 혈액관리본부</p>
+                    <p>COPYRIGHT(C) KOREAN Redcross Blood Services. ALL RIGHT RESERVED.</p>
+                </div>
             </div>
         </section>
     </div>
