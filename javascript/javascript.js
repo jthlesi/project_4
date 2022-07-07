@@ -62,10 +62,6 @@ if (window.matchMedia("(max-width:799px)").matches){
 			}
 		});
 	});
-
-
-
-	
 }else if(window.matchMedia("(min-width:800px)").matches){
 $(document).ready(function(){
     $(window).on('scroll touchmove mousewheel', function(event){
@@ -85,9 +81,9 @@ $(document).ready(function(){
 	});
 });
 }
-
+//네비게이션 색상변경
 $(document).ready(function(){
-    $(window).on('scroll touchmove mousewheel click', function(){
+    $(window).on('scroll touchmove touchstart touchend mousewheel click', function(){
 		if($(".page li").eq(1).hasClass("active")){
 			$("header nav a").addClass("black");
 			$("#ham span").addClass("black");
@@ -103,9 +99,8 @@ $(document).ready(function(){
 		}
 	});
 });
-
 $(document).ready(function(){
-    $(window).on('scroll touchmove mousewheel click', function(){
+    $(window).on('scroll touchmove touchstart touchend mousewheel click', function(){
 		if($(".page li").eq(2).hasClass("active")){
 			$(".page li").addClass("white")
 		}else if($(".page li").eq(3).hasClass("active")){
@@ -173,7 +168,6 @@ if (window.matchMedia("(max-width:799px").matches){
 	
 	$(".sub>li").css({"width":$("nav>ul>li").width()});
 }
-
 
 $("#hamWrap").on("click",function(){
 	$("#ham span").toggleClass("open");

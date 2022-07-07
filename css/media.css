@@ -385,6 +385,10 @@
     float: none;
 }
 
+#footLogo{
+    margin: 20px 0;
+}
+
 }
 
 @media (min-width:600px) and (max-width:799px){
