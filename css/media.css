@@ -117,8 +117,7 @@
     width: 80%;
     height: 100px;
     position: absolute;
-    top:50%;
-    transform: translateY(-50%);
+    top:47%;
     left:20px;
     display: flex;
     justify-content: space-between;
@@ -224,9 +223,11 @@
 #box_3{
     border-bottom: 1px solid rgba(225,225,225,0.2);
 }
+
 .bar{
-    margin:10px 0 7px 0
+    margin:5px 0 5px 0
 }
+
 .countBox p:first-of-type{
     font-size: 0.8em;
 }
@@ -330,9 +331,13 @@
 
 
 #footerImg{
-    margin-top: 110px;
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
+}
+
+#footerTxt{
+    height: 60%;
 }
 
 .footerWrap{
@@ -342,11 +347,11 @@
 
 #footerImg h2{
     margin-left:20px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #footerImg p{
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-left: 20px;
     width: 75%;
 }
@@ -358,7 +363,7 @@
 }
 
 #footTxtWrap ul{
-    margin: 0px 20px 5px 20px;
+    margin: 0px 20px 0px 20px;
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -379,6 +384,7 @@
     font-size: 0.8em;
     float: none;
 }
+
 }
 
 @media (min-width:600px) and (max-width:799px){
