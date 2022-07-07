@@ -114,9 +114,13 @@ nav a.black:hover{
 }
 
 .sub>li{
-    color: white;
+    color: #999999;
     line-height: 2.5em;
     cursor: pointer;
+}
+
+.sub>li:hover{
+    color: white;
 }
 
 .nav_sub{
@@ -126,9 +130,10 @@ nav a.black:hover{
     left: 0;
     display: none;
     border-top: 1px solid white;
+
 }
 
-.nav_sub>.wrap{
+.nav_sub .wrap{
     justify-content: right;
     align-items: flex-start;
 }
@@ -152,9 +157,13 @@ nav a.black:hover{
     display: block;
     width:50px;
     height: 5px;
-    background-color:black;
+    background-color:white;
     position: absolute;
     margin: 10px 5px 10px 5px;
+}
+
+#ham span.black{
+    background-color: black;
 }
 
 #ham_1{
@@ -176,7 +185,6 @@ nav a.black:hover{
 
 #ham_2{
     top:17.5px;
-    transition : all .25s .25s;
     opacity : 1;
 }
 
@@ -237,6 +245,33 @@ nav a.black:hover{
 
 .navHam{
     display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color:white;
+    width: 100%;
+    font-size: 2em;
+    padding: 15px 0px 0px 15px;
+    line-height: 2em;
+    cursor: pointer;
+    border-top: 1px solid white;
+}
+
+.hamSub{
+    display: none;
+    padding: 15px 0px 15px 15px;
+    line-height: 1.5em;
+    color: #999999;
+}
+
+.hamSub li:hover{
+    color: white;
+}
+
+.hamSub.open{
+    display: block;
+}
+
+.navHam.open{
+    display: block;
 }
 
 
@@ -280,7 +315,6 @@ nav a.black:hover{
 
 #slide_3{
     background-image: url(../img/banner_3.jpg);
-
 }
 
 /* 배너 십자가 */

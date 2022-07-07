@@ -22,6 +22,50 @@ $(document).ready(function(){
 	});
 });
 //스크롤
+if (window.matchMedia("(max-width:799px").matches){
+	$(document).ready(function(){
+		$(window).on('scroll mousewheel', function(event){
+			var pageActive = $(".page ul li.active");
+			var pageIndex = pageActive.index();
+			if(event.originalEvent.wheelDelta >= 0) {
+				if(pageIndex > 0) {
+					pageActive.prev().addClass("active").siblings().removeClass("active");
+					$("#fullpage").stop().animate({"top": -height*(pageIndex-1)+ "px"},700,"swing");
+				}
+			}else{
+				if(pageIndex <$(".page ul li").length-1){ 
+					pageActive.next().addClass("active").siblings().removeClass("active");
+					$("#fullpage").stop().animate({"top": -height*(pageIndex+1) + "px"},700,"swing");
+				}
+			}
+		});
+		//모바일터치스크롤
+		var startY, endY;
+		$(window).on("touchstart",function(event){
+			startY = event.originalEvent.changedTouches[0].screenY;
+		});
+		$(window).on("touchend",function(event){
+			var pageActive = $(".page ul li.active");
+			var pageIndex = pageActive.index();
+			endY = event.originalEvent.changedTouches[0].screenY;
+			if(startY-endY>20){
+				if(pageIndex > 0) {
+					pageActive.prev().addClass("active").siblings().removeClass("active");
+					$("#fullpage").stop().animate({"top": -height*(pageIndex-1)+ "px"},700,"swing");
+				}   
+			   }else if(endY-startY>20){
+				if(pageIndex <$(".page ul li").length-1){ 
+					pageActive.next().addClass("active").siblings().removeClass("active");
+					$("#fullpage").stop().animate({"top": -height*(pageIndex+1) + "px"},700,"swing");
+				}
+			}
+		});
+	});
+
+
+
+	
+}else if(window.matchMedia("(min-width:800px)").matches){
 $(document).ready(function(){
     $(window).on('scroll touchmove mousewheel', function(event){
 		var pageActive = $(".page ul li.active");
@@ -39,17 +83,22 @@ $(document).ready(function(){
 		}
 	});
 });
+}
 
 $(document).ready(function(){
     $(window).on('scroll touchmove mousewheel click', function(){
 		if($(".page li").eq(1).hasClass("active")){
-			$("header nav a").addClass("black")
+			$("header nav a").addClass("black");
+			$("#ham span").addClass("black");
 		}else if($(".page li").eq(4).hasClass("active")){
-			$("header nav a").addClass("black")
+			$("header nav a").addClass("black");
+			$("#ham span").addClass("black");
 		}else if($(".page li").eq(5).hasClass("active")){
-			$("header nav a").addClass("black")
+			$("header nav a").addClass("black");
+			$("#ham span").addClass("black");
 		}else{
-			$("header nav a").removeClass("black")
+			$("header nav a").removeClass("black");
+			$("#ham span").removeClass("black")
 		}
 	});
 });
@@ -84,7 +133,7 @@ function slide(){
     $(".slide").eq(i-1).stop().fadeOut("fast");
 };
 
-setInterval(slide,3000)
+// setInterval(slide,3000)
 
 //십자가
 $(document).ready(function(){
@@ -92,23 +141,50 @@ $(document).ready(function(){
 });
 
 //네비게이션
-$(function(){
-	$("header").hover(function(){
-		$(".nav_sub").stop().slideDown();
-		$("#nav_wrap, .nav_sub").css({"backgroundColor":"black","opacity":"0.9"});
-		$("nav a").css({"color":"white"});
-	}, function(){
-		$(".nav_sub").stop().slideUp("fast");
-		$("#nav_wrap, .nav_sub").css({"backgroundColor":"","opacity":""});
-		$("nav a").css({"color":""});
-	})
-});
+if (window.matchMedia("(max-width:799px").matches){
+	$(function(){
+		$("header").hover(function(){
+			$("#nav_wrap").css({"backgroundColor":"black","opacity":"0.9"});
+			$("nav a").css({"color":"white"});
+			if($("header nav a").hasClass("black")){
+				$("#ham span").removeClass("black");
+			}
+		}, function(){
+			$("#nav_wrap").css({"backgroundColor":"","opacity":""});
+			$("nav a").css({"color":""});
+			if($("header nav a").hasClass("black")){
+				$("#ham span").addClass("black");
+			}
+		})
+	});
+}else if(window.matchMedia("(min-width:800px)").matches){
+	$(function(){
+		$("header").hover(function(){
+			$(".nav_sub").stop().slideDown();
+			$("#nav_wrap, .nav_sub").css({"backgroundColor":"black","opacity":"0.9"});
+			$("nav a").css({"color":"white"});
+		}, function(){
+			$(".nav_sub").stop().slideUp("fast");
+			$("#nav_wrap, .nav_sub").css({"backgroundColor":"","opacity":""});
+			$("nav a").css({"color":""});
+		})
+	});
+	
+	$(".sub>li").css({"width":$("nav>ul>li").width()});
+}
 
-$(".sub>li").css({"width":$("nav>ul>li").width()});
 
 $("#hamWrap").on("click",function(){
-	$("#ham span").toggleClass("open")
+	$("#ham span").toggleClass("open");
+	$(".navHam").toggleClass("open")
 })
+
+$(".navHam li").on("click", function(){
+	$(".hamSub").stop().slideUp();
+	$(".hamSub",this).stop().slideToggle();
+})
+
+$(".navHam").css({"height":($(window).height() - 100)})
 
 //서비스섹션 슬라이드
 $(".slides").css({"width":$(window).width()});
@@ -197,7 +273,7 @@ $(document).on("mouseleave", ".countBox",function(){
 //5번섹션
 
 //뉴스 슬라이드
-if (window.matchMedia("(max-width:799px").matches){
+if (window.matchMedia("(max-width:799px)").matches){
 	$(".newsContents").css({"width":$("#newsSlideWrap").width()});
 }else if (window.matchMedia("(min-width:800px) and (max-width:1420px").matches){
 	$(".newsContents").css({"width":$("#newsSlideWrap").width()/2});
@@ -238,11 +314,22 @@ $("#idxCount_2>span").eq(1).text($(".newsContents").length);
 
 setInterval(next_2,3000)
 
+
+if (window.matchMedia("(max-width:599px").matches){
+	$(".countWrap").wrap('<div id="wrapParent"></div>');
+}
+
+
+
 //footer
 
 //이미지 크기 변경
+
+
+if(window.matchMedia("(min-width:600px)").matches){
 $(".footerWrap").hover(function(){
 	$(this).children().css({"width":"105%"}).parent().css({"width":"55%"}).siblings().css({"width":"45%"});
 }, function(){
 	$(this).children().css({"width":"100%"}).parent().css({"width":"50%"}).siblings().css({"width":"50%"});
 })
+}
