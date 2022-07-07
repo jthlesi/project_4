@@ -313,7 +313,7 @@
     height: 40%;
     justify-content: flex-end;
     align-items: flex-start;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 #newsSlide{
@@ -323,6 +323,11 @@
 
 #newsSlides{
     margin-top: 10%;
+}
+
+#newsSlideWrap{
+    width:90%;
+    margin: 0px 0px 0px 20px;
 }
 
 #controller_2{
