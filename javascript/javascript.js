@@ -22,7 +22,7 @@ $(document).ready(function(){
 	});
 });
 //스크롤
-if (window.matchMedia("(max-width:799px").matches){
+if (window.matchMedia("(max-width:799px)").matches){
 	$(document).ready(function(){
 		$(window).on('scroll mousewheel', function(event){
 			var pageActive = $(".page ul li.active");
@@ -315,8 +315,13 @@ $("#idxCount_2>span").eq(1).text($(".newsContents").length);
 
 setInterval(next_2,3000)
 
+//반응형 구조변경
+if (window.matchMedia("(max-width:599px)").matches){
+	const list = document.getElementById("remove");
+	const del = document.getElementById("del")
+	list.removeChild(del);
 
-if (window.matchMedia("(max-width:599px").matches){
+	
 	$(".countWrap").wrap('<div id="wrapParent"></div>');
 }
 
