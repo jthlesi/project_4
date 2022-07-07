@@ -710,6 +710,7 @@ nav a.black:hover{
 .newsBtn:hover{
     background: #f82c2d;
     color: white;
+    border: red;
 }
 
 #newsSlideWrap{

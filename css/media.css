@@ -107,7 +107,7 @@
 
     #service h2{
         position: absolute;
-        top:130px;
+        top:110px;
         left:20px;
         font-size: 2em;
     }
@@ -118,6 +118,7 @@
     height: 100px;
     position: absolute;
     top:50%;
+    transform: translateY(-50%);
     left:20px;
     display: flex;
     justify-content: space-between;
@@ -164,7 +165,7 @@
 }
     .serviceTxt>h3{
         position: relative;
-        top:45%;
+        top:43%;
         left:20px;
         font-size: 1em;
     }
@@ -172,16 +173,17 @@
     .serviceTxt>p{
         position: relative;
         width: 80%;
-        top: 45%;
+        top: 43%;
         left:20px;
         font-size: 0.8em;
     }
     
     #searchBtn{
         position: relative;
-        top: 50%;
+        top: 48%;
         left: 20px;
         width:200px;
+        height: 40px;
     }
 
     #text h2{
@@ -222,15 +224,16 @@
 #box_3{
     border-bottom: 1px solid rgba(225,225,225,0.2);
 }
-
+.bar{
+    margin:10px 0 7px 0
+}
 .countBox p:first-of-type{
-    font-size: 1em;
-    color: #f82c2d;
+    font-size: 0.8em;
 }
 
 .countBox p:nth-of-type(2){
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 1.7em;
+    margin-bottom: 13px;
 }
 
 .countBox p:nth-of-type(2)>span{
@@ -238,19 +241,20 @@
 }
 
 .countBox p:nth-of-type(3){
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 #newsTxt h2{
     position: relative;
-    font-size: 2em;
+    top:10px;
+    font-size: 1.8em;
 }
 
 .newsBtn{
     width: 150px;
     height: 40px;
     left:0;
-    top:0;
+    top:10px;
     font-size: 1em;
 }
 
@@ -326,7 +330,7 @@
 
 
 #footerImg{
-    margin-top: 120px;
+    margin-top: 110px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -338,6 +342,7 @@
 
 #footerImg h2{
     margin-left:20px;
+    font-size: 1.5em;
 }
 
 #footerImg p{
@@ -365,11 +370,13 @@
 }
 
 #footTxtWrap p{
+    font-size: 0.8em;
     margin:10px 40px 0 20px;
 }
 
 #footTxtWrap ul li{
     margin: 0 10px 10px 0;
+    font-size: 0.8em;
     float: none;
 }
 }
@@ -473,7 +480,23 @@
         width: 50%;
         height: 50%;
     }
-    
+    #box_1{
+        border-bottom: 1px solid rgba(225,225,225,0.2);
+    }
+
+    #box_2{
+        border-right: none;
+        border-bottom: 1px solid rgba(225,225,225,0.2);
+    }
+
+    #box_3{
+        border-right:none;
+    }
+
+    #box_4{
+        border-left: 1px solid rgba(225,225,225,0.2);
+    }
+
     #newsTxt h2{
         position: relative;
         font-size: 3em;

@@ -40,7 +40,8 @@ if (window.matchMedia("(max-width:799px").matches){
 			}
 		});
 		//모바일터치스크롤
-		var startY, endY;
+		var startY
+		var endY;
 		$(window).on("touchstart",function(event){
 			startY = event.originalEvent.changedTouches[0].screenY;
 		});
@@ -133,7 +134,7 @@ function slide(){
     $(".slide").eq(i-1).stop().fadeOut("fast");
 };
 
-// setInterval(slide,3000)
+setInterval(slide,3000)
 
 //십자가
 $(document).ready(function(){
