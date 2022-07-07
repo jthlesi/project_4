@@ -99,6 +99,7 @@ $(document).ready(function(){
 		}
 	});
 });
+//페이저 색생변경
 $(document).ready(function(){
     $(window).on('scroll touchmove touchstart touchend mousewheel click', function(){
 		if($(".page li").eq(2).hasClass("active")){
