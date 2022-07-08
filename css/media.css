@@ -19,6 +19,10 @@
         display: block;
     }
 
+    .navHam{
+    font-size: 1em;
+    }
+    
     .page{
         right: 20px;
     }
@@ -368,7 +372,7 @@
 }
 
 #footTxtWrap ul{
-    margin: 0px 20px 0px 20px;
+    margin: 0px 10px 0px 20px;
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -381,7 +385,7 @@
 
 #footTxtWrap p{
     font-size: 0.8em;
-    margin:5px 10x 0 20px;
+    margin:5px 10px 0 20px;
 }
 
 #footTxtWrap ul li{

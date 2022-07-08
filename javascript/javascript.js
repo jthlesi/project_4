@@ -22,7 +22,6 @@ $(document).ready(function(){
 	});
 });
 //스크롤
-if (window.matchMedia("(max-width:799px)").matches){
 	$(document).ready(function(){
 		$(window).on('scroll mousewheel', function(event){
 			var pageActive = $(".page ul li.active");
@@ -40,7 +39,7 @@ if (window.matchMedia("(max-width:799px)").matches){
 			}
 		});
 		//모바일터치스크롤
-		var startY
+		var startY;
 		var endY;
 		$(window).on("touchstart",function(event){
 			startY = event.originalEvent.changedTouches[0].screenY;
@@ -62,25 +61,7 @@ if (window.matchMedia("(max-width:799px)").matches){
 			}
 		});
 	});
-}else if(window.matchMedia("(min-width:800px)").matches){
-$(document).ready(function(){
-    $(window).on('scroll touchmove mousewheel', function(event){
-		var pageActive = $(".page ul li.active");
-		var pageIndex = pageActive.index();
-		if(event.originalEvent.wheelDelta >= 0) {
-			if(pageIndex > 0) {
-				pageActive.prev().addClass("active").siblings().removeClass("active");
-				$("#fullpage").stop().animate({"top": -height*(pageIndex-1)+ "px"},700,"swing");
-			}
-		}else{
-			if(pageIndex <$(".page ul li").length-1){ 
-				pageActive.next().addClass("active").siblings().removeClass("active");
-				$("#fullpage").stop().animate({"top": -height*(pageIndex+1) + "px"},700,"swing");
-			}
-		}
-	});
-});
-}
+
 //네비게이션 색상변경
 $(document).ready(function(){
     $(window).on('scroll touchmove touchstart touchend mousewheel click', function(){
