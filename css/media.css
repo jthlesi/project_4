@@ -1,624 +1,599 @@
 @media (max-width:599px) {
-    .wrap{
+    .wrap {
         width: 100%;
     }
 
-    nav ul{
+    nav ul {
         display: none;
     }
 
-    .nav_sub{
+    .nav_sub {
         display: none;
     }
-    
-    #hamWrap{
-        display: block;
-    }
-    
-    #ham{
+
+    #hamWrap {
         display: block;
     }
 
-    .navHam{
-    font-size: 1em;
+    #ham {
+        display: block;
     }
-    
-    .page{
+
+    .navHam {
+        font-size: 1.2em;
+    }
+
+    .page {
         right: 20px;
     }
 
-    .slide{
+    .slide {
         background-size: 100% 100%;
     }
 
-    .cross{
-        height:25%;
+    .cross {
+        height: 25%;
         background: #f82c2d;
         opacity: 0.6;
         transition: 1s;
     }
-    
-    #slide_1 .cross_1{
-        transform: rotate(0deg) translateY(130%);
-    }
-    
-    #slide_1 .cross_2{
+
+    #slide_1 .cross_2 {
         transform: rotate(90deg) translateX(12.5%) translateY(100%);
     }
-    
-    #slide_1.on .cross_1{
+
+    #slide_1.on .cross_1 {
         transform: rotate(90deg) translateX(37.5%) translateY(100%);
     }
-    
-    #slide_1.on .cross_2{
-        transform: rotate(0deg) translateY(30%);
-    }
-    
-    #slide_2 .cross_1{
+
+    #slide_2 .cross_1 {
         transform: rotate(90deg) translateX(37.5%) translateY(100%);
     }
-    
-    #slide_2 .cross_2{
-        transform: rotate(0deg) translateY(30%);
-    }
-    
-    #slide_2.on .cross_1{
-        transform: rotate(45deg) translateX(25%) translateY(85%);
-    }
-    
-    #slide_2.on .cross_2{
-        transform: rotate(-45deg) translateX(-5%) translateY(15%);
-    }
-    
-    #slide_3 .cross_1{
-        transform: rotate(45deg) translateX(25%) translateY(85%);
-    }
-    
-    #slide_3 .cross_2{
-        transform: rotate(-45deg) translateX(-5%) translateY(15%);
-    }
-    
-    #slide_3.on .cross_1{
-        transform: rotate(0deg) translateY(130%);
-    }
-    
-    #slide_3.on .cross_2{
+
+    #slide_3.on .cross_2 {
         transform: rotate(90deg) translateX(12.5%) translateY(100%);
     }
-    
-    .textBox>p:first-child{
+
+    .textBox>p:first-child {
         font-size: 2em;
     }
- 
-    .textBox>p:nth-child(2){
+
+    .textBox>p:nth-child(2) {
         font-size: 1em;
     }
 
-    .bannerBtn{
+    .bannerBtn {
         width: 150px;
         height: 50px;
     }
 
-    .serviceTxt{
+    .serviceTxt {
         width: 100%;
         height: 60%;
     }
-    
-    .serviceImg{
+
+    .serviceImg {
         width: 100%;
         height: 40%;
     }
 
-    #service h2{
+    #service h2 {
         position: absolute;
-        top:110px;
-        left:20px;
+        top: 110px;
+        left: 20px;
         font-size: 2em;
     }
 
-    
-#controller{
-    width: 80%;
-    height: 100px;
-    position: absolute;
-    top:47%;
-    left:20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #9e9e9e;
-}
 
-#idxCount{
-    width: 70px;
-    height: 40px;
-    font-size: 1.5em;
-}
+    #controller {
+        width: 80%;
+        height: 100px;
+        position: absolute;
+        top: 47%;
+        left: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9e9e9e;
+    }
 
-#controller p{
-    font-size: 0.7em;
-}
+    #idxCount {
+        width: 70px;
+        height: 40px;
+        font-size: 1.5em;
+    }
 
-#controller span{
-    font-size:0.7em;
-}
+    #controller p {
+        font-size: 0.7em;
+    }
 
-#controller>ul>li{
-    float: left;
-    width: 30px;
-    height: 30px;
-    background: white;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border: #e2dfdf 1px solid;
-}
+    #controller span {
+        font-size: 0.7em;
+    }
 
-#progressWrap{
-    width: 40%;
-    height: 8px;
+    #controller>ul>li {
+        float: left;
+        width: 30px;
+        height: 30px;
+        background: white;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: #e2dfdf 1px solid;
+    }
 
-    margin-left: 10px;
-}
+    #progressWrap {
+        width: 40%;
+        height: 8px;
 
-#progressBar{
-    height:7px;
-}
-    .serviceTxt>h3{
+        margin-left: 10px;
+    }
+
+    #progressBar {
+        height: 7px;
+    }
+
+    .serviceTxt>h3 {
         position: relative;
-        top:43%;
-        left:20px;
+        top: 43%;
+        left: 20px;
         font-size: 1em;
     }
-    
-    .serviceTxt>p{
+
+    .serviceTxt>p {
         position: relative;
         width: 80%;
         top: 43%;
-        left:20px;
+        left: 20px;
         font-size: 0.8em;
     }
-    
-    #searchBtn{
+
+    #searchBtn {
         position: relative;
         top: 48%;
         left: 20px;
-        width:200px;
+        width: 200px;
         height: 40px;
     }
 
-    #text h2{
+    #text h2 {
         font-size: 1.5em;
     }
 
-    
-#text p{
-    width: 80%;
-    font-size: 1em;
-    text-align: center;
-}
 
-.countBox{
-    width: 100%;
-    height: 25%;
-}
+    #text p {
+        width: 80%;
+        font-size: 1em;
+        text-align: center;
+    }
 
-.countWrap{
-    height: calc(100% - 100px);
-    position: relative;
-    top:100px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background: none;
-}
-
-#wrapParent{
-    width: 100%;
-    height: 100%;
-    background:rgba(0, 0, 0, 0.5) ;
-}
-#box_2{
-    border-top: 1px solid rgba(225,225,225,0.2);
-    border-bottom: 1px solid rgba(225,225,225,0.2);
-}
-
-#box_3{
-    border-bottom: 1px solid rgba(225,225,225,0.2);
-}
-
-.bar{
-    margin:5px 0 5px 0
-}
-
-.countBox p:first-of-type{
-    font-size: 0.8em;
-}
-
-.countBox p:nth-of-type(2){
-    font-size: 1.7em;
-    margin-bottom: 13px;
-}
-
-.countBox p:nth-of-type(2)>span{
-    font-size: 0.25em;
-}
-
-.countBox p:nth-of-type(3){
-    font-size: 0.8em;
-}
-
-#newsTxt h2{
-    position: relative;
-    top:10px;
-    font-size: 1.8em;
-}
-
-.newsBtn{
-    width: 150px;
-    height: 40px;
-    left:0;
-    top:10px;
-    font-size: 1em;
-}
-
-.newsTxtBox h3{
-    font-size:1em;
-}
-
-#newsSlideWrap{
-    margin: 0% 10% ;
-    height: 100%;
-}
-
-#controller_2 p{
-    font-size: 1em;
-}
-
-#controller_2 span{
-    font-size:1em;
-}
-
-#controller_2 span:first-of-type{
-    font-size:1.1em;
-}
-
-#idxCount_2{
-    width: 60px;
-}
-
-#controller_2>ul>li{
-    width: 30px;
-    height: 30px;
-}
-
-#progressWrap_2{
-    width: calc(100% - 160px);
-}
-
-.newsTxtBox p{
-    font-size: 0.9em;
-}
-
-.newsImgBox{
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-#news{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#newsTxt{
-    width: 100%;
-    height: 40%;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-left: 20px;
-}
-
-#newsSlide{
-    width: 100%;
-    height: 60%;
-}
-
-#newsSlides{
-    margin-top: 10%;
-}
-
-#newsSlideWrap{
-    width:90%;
-    margin: 0px 0px 0px 20px;
-}
-
-#controller_2{
-    margin-top: 40%;
-}
-
-
-#footerImg{
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#footerTxt{
-    height: 60%;
-}
-
-.footerWrap{
-    width: 100%;
-    height: 50%;
-}
-
-#footerImg h2{
-    margin-left:20px;
-    font-size: 1.2em;
-}
-
-#footerImg p{
-    font-size: 0.7em;
-    margin-left: 20px;
-    width: 75%;
-}
-
-.arrow{
-    display: inline;
-    font-size: 1.5em;
-    left:85%;
-}
-
-#footTxtWrap ul{
-    margin: 0px 10px 0px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    height: auto;
-}
-
-#footTxtWrap{
-    width: 100%;
-}
-
-#footTxtWrap p{
-    font-size: 0.8em;
-    margin:5px 10px 0 20px;
-}
-
-#footTxtWrap ul li{
-    margin: 0 10px 10px 0;
-    font-size: 0.8em;
-    float: none;
-}
-
-#footLogo{
-    margin: 20px 0;
-}
-
-}
-
-@media (min-width:600px) and (max-width:799px){
-    .wrap{
+    .countBox {
         width: 100%;
+        height: 25%;
     }
 
-    nav ul{
-        display: none;
-    }
-
-    .nav_sub{
-        display: none;
-    }
-
-    #hamWrap{
-        display: block;
-    }
-    
-    #ham{
-        display: block;
-    }
-
-    .slide{
-        background-position: right
-    }
-
-    .textBox>p:first-child{
-        font-size: 4em;
-    }
- 
-    .textBox>p:nth-child(2){
-        font-size: 1.5em;
-    }
-
-    #service h2{
-        font-size: 2em;
-        left: 40px;
-    }
-
-    .serviceTxt>h3{
-        font-size: 1em;
-        left: 40px;
-    }
-
-    .serviceTxt>p{
-        width: 70%;
-        left: 40px;
-    }
-
-    #searchBtn{
-        width: 150px;
-        font-size: 0.8em;
-        left: 40px;
-    }
-
-    #controller{
-        left: 40px;
-    }
-
-    #controller span{
-        font-size:0.5em;
-    }
-    #controller span:first-of-type{
-        font-size:0.6em;
-    }
-
-    #idxCount{
-        width: 50px;
-    }
-
-    #controller p{
-        font-size: 0.5em;
-    }
-
-    #controller>ul>li{
-        width: 30px;
-        height: 30px;
-        font-size: 0.8em;
-    }
-    #progressWrap{
-        width: calc(100% - 150px);
-    }
-
-    #text h2{
-        font-size: 3em;
-    }
-    
-    #text p{
-        font-size: 1.2em;
-    }
-
-    .countWrap{
-        flex-wrap: wrap;
-        display: flex;
-   }
-
-    .countBox{
-        width: 50%;
-        height: 50%;
-    }
-    #box_1{
-        border-bottom: 1px solid rgba(225,225,225,0.2);
-    }
-
-    #box_2{
-        border-right: none;
-        border-bottom: 1px solid rgba(225,225,225,0.2);
-    }
-
-    #box_3{
-        border-right:none;
-    }
-
-    #box_4{
-        border-left: 1px solid rgba(225,225,225,0.2);
-    }
-
-    #newsTxt h2{
+    .countWrap {
+        height: calc(100% - 100px);
         position: relative;
-        font-size: 3em;
-        top:50px
+        top: 100px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: none;
     }
 
-    .newsBtn{
+    #wrapParent {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #box_2 {
+        border-top: 1px solid rgba(225, 225, 225, 0.2);
+        border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    }
+
+    #box_3 {
+        border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    }
+
+    .bar {
+        margin: 5px 0 5px 0
+    }
+
+    .countBox p:first-of-type {
+        font-size: 0.8em;
+    }
+
+    .countBox p:nth-of-type(2) {
+        font-size: 1.7em;
+        margin-bottom: 13px;
+    }
+
+    .countBox p:nth-of-type(2)>span {
+        font-size: 0.25em;
+    }
+
+    .countBox p:nth-of-type(3) {
+        font-size: 0.8em;
+    }
+
+    #newsTxt h2 {
+        position: relative;
+        top: 10px;
+        font-size: 1.8em;
+    }
+
+    .newsBtn {
         width: 150px;
-        height: 50px;
-        left:68%;
-        top: -10px;
+        height: 40px;
+        left: 0;
+        top: 10px;
         font-size: 1em;
     }
 
-    .newsTxtBox h3{
-        font-size:1em;
+    .newsTxtBox h3 {
+        font-size: 1em;
     }
 
-    #newsSlideWrap{
-        margin: 0% 10% ;
+    #newsSlideWrap {
+        margin: 0% 10%;
         height: 100%;
     }
 
-    #controller_2 p{
+    #controller_2 p {
         font-size: 1em;
     }
-    
-    #controller_2 span{
-        font-size:1em;
-    }
-    
-    #controller_2 span:first-of-type{
-        font-size:1.1em;
+
+    #controller_2 span {
+        font-size: 1em;
     }
 
-    #idxCount_2{
+    #controller_2 span:first-of-type {
+        font-size: 1.1em;
+    }
+
+    #idxCount_2 {
         width: 60px;
     }
-    
-    #controller_2>ul>li{
+
+    #controller_2>ul>li {
         width: 30px;
         height: 30px;
     }
 
-    #progressWrap_2{
-        width: calc(100% - 180px);
+    #progressWrap_2 {
+        width: calc(100% - 160px);
     }
 
-    .newsTxtBox p{
+    .newsTxtBox p {
         font-size: 0.9em;
     }
 
-    .newsImgBox{
+    .newsImgBox {
         width: 90%;
         height: 100%;
         margin: auto;
         overflow: hidden;
     }
-    #news{
+
+    #news {
         display: flex;
         flex-wrap: wrap;
     }
 
-    #newsTxt{
+    #newsTxt {
+        width: 100%;
+        height: 40%;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    #newsSlide {
+        width: 100%;
+        height: 60%;
+    }
+
+    #newsSlides {
+        margin-top: 10%;
+    }
+
+    #newsSlideWrap {
+        width: 90%;
+        margin: 0px 0px 0px 20px;
+    }
+
+    #controller_2 {
+        margin-top: 40%;
+    }
+
+
+    #footerImg {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #footerTxt {
+        height: 60%;
+    }
+
+    .footerWrap {
+        width: 100%;
+        height: 50%;
+    }
+
+    #footerImg h2 {
+        margin-left: 20px;
+        font-size: 1.2em;
+    }
+
+    #footerImg p {
+        font-size: 0.7em;
+        margin-left: 20px;
+        width: 75%;
+    }
+
+    .arrow {
+        display: inline;
+        font-size: 1.5em;
+        left: 85%;
+    }
+
+    #footTxtWrap ul {
+        margin: 0px 15px 0px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: auto;
+    }
+
+    #footTxtWrap {
+        width: 100%;
+    }
+
+    #footTxtWrap p {
+        font-size: 0.8em;
+        margin: 5px 15px 0 15px;
+    }
+
+    #footTxtWrap ul li {
+        margin: 0 10px 10px 0;
+        font-size: 0.8em;
+        float: none;
+    }
+
+    #footLogo {
+        margin: 20px 0;
+    }
+
+}
+
+@media (min-width:600px) and (max-width:799px) {
+    .wrap {
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .nav_sub {
+        display: none;
+    }
+
+    #hamWrap {
+        display: block;
+    }
+
+    #ham {
+        display: block;
+    }
+
+    .slide {
+        background-position: right
+    }
+
+    .textBox>p:first-child {
+        font-size: 4em;
+    }
+
+    .textBox>p:nth-child(2) {
+        font-size: 1.5em;
+    }
+
+    #service h2 {
+        font-size: 2em;
+        left: 40px;
+    }
+
+    .serviceTxt>h3 {
+        font-size: 1em;
+        left: 40px;
+    }
+
+    .serviceTxt>p {
+        width: 70%;
+        left: 40px;
+    }
+
+    #searchBtn {
+        width: 150px;
+        font-size: 0.8em;
+        left: 40px;
+    }
+
+    #controller {
+        left: 40px;
+    }
+
+    #controller span {
+        font-size: 0.5em;
+    }
+
+    #controller span:first-of-type {
+        font-size: 0.6em;
+    }
+
+    #idxCount {
+        width: 50px;
+    }
+
+    #controller p {
+        font-size: 0.5em;
+    }
+
+    #controller>ul>li {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8em;
+    }
+
+    #progressWrap {
+        width: calc(100% - 150px);
+    }
+
+    #text h2 {
+        font-size: 3em;
+    }
+
+    #text p {
+        font-size: 1.2em;
+    }
+
+    .countWrap {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .countBox {
+        width: 50%;
+        height: 50%;
+    }
+
+    #box_1 {
+        border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    }
+
+    #box_2 {
+        border-right: none;
+        border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    }
+
+    #box_3 {
+        border-right: none;
+    }
+
+    #box_4 {
+        border-left: 1px solid rgba(225, 225, 225, 0.2);
+    }
+
+    #newsTxt h2 {
+        position: relative;
+        font-size: 3em;
+        top: 50px
+    }
+
+    .newsBtn {
+        width: 150px;
+        height: 50px;
+        left: 68%;
+        top: -10px;
+        font-size: 1em;
+    }
+
+    .newsTxtBox h3 {
+        font-size: 1em;
+    }
+
+    #newsSlideWrap {
+        margin: 0% 10%;
+        height: 100%;
+    }
+
+    #controller_2 p {
+        font-size: 1em;
+    }
+
+    #controller_2 span {
+        font-size: 1em;
+    }
+
+    #controller_2 span:first-of-type {
+        font-size: 1.1em;
+    }
+
+    #idxCount_2 {
+        width: 60px;
+    }
+
+    #controller_2>ul>li {
+        width: 30px;
+        height: 30px;
+    }
+
+    #progressWrap_2 {
+        width: calc(100% - 180px);
+    }
+
+    .newsTxtBox p {
+        font-size: 0.9em;
+    }
+
+    .newsImgBox {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    #news {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #newsTxt {
         width: 100%;
         height: 50%;
         justify-content: flex-end;
         align-items: flex-start;
         margin-left: 40px;
     }
-    
-    #newsSlide{
+
+    #newsSlide {
         width: 100%;
         height: 50%;
     }
 
-    #newsSlides{
+    #newsSlides {
         margin-top: 5%;
     }
 
-    #controller_2{
+    #controller_2 {
         margin-top: 15%;
     }
 
-    #footerImg{
+    #footerImg {
         margin-top: 25%;
     }
 
-    #footerImg h2{
-        margin-left:40px;
+    #footerImg h2 {
+        margin-left: 40px;
     }
 
-    #footerImg p{
+    #footerImg p {
         font-size: 1em;
         margin-left: 40px;
         width: 80%;
     }
 
-    .arrow{
+    .arrow {
         display: none;
     }
 
-    #footTxtWrap ul{
+    #footTxtWrap ul {
         margin: 0px 20px;
         display: flex;
         flex-wrap: wrap;
@@ -626,127 +601,128 @@
         height: auto;
     }
 
-    #footTxtWrap{
+    #footTxtWrap {
         width: 100%;
     }
 
-    #footTxtWrap p{
+    #footTxtWrap p {
         margin-left: 20px;
     }
-    
-    #footTxtWrap ul li{
+
+    #footTxtWrap ul li {
         float: none;
     }
 }
 
-@media (min-width:800px) and (max-width:1419px){
-    .wrap{
+@media (min-width:800px) and (max-width:1419px) {
+    .wrap {
         width: 100%;
     }
 
-    nav a{
+    nav a {
         font-size: 1em;
     }
 
-    #service h2{
+    #service h2 {
         font-size: 3em;
     }
 
-    .serviceTxt>h3{
+    .serviceTxt>h3 {
         font-size: 1.5em;
     }
 
-    .serviceTxt>p{
+    .serviceTxt>p {
         width: 50%;
     }
 
-    #searchBtn{
+    #searchBtn {
         width: 200px;
     }
 
-    #progressWrap{
-        width:calc(100% - 200px);
+    #progressWrap {
+        width: calc(100% - 200px);
     }
 
-    #controller span{
-        font-size:0.6em;
-    }
-    #controller span:first-of-type{
-        font-size:0.7em;
+    #controller span {
+        font-size: 0.6em;
     }
 
-    .countBox p:first-of-type{
-        font-size: 1em;
-    }
-    
-    .countBox p:nth-of-type(2){
-        font-size: 2em;
-    }
-    
-    .countBox p:nth-of-type(2)>span{
-        font-size: 0.5em;
-    }
-    
-    .countBox p:nth-of-type(3){
+    #controller span:first-of-type {
         font-size: 0.7em;
     }
 
-    #newsTxt h2{
-        font-size: 3em;
-    }
-
-    .newsBtn{
-        width: 150px;
-        left:-70px;
+    .countBox p:first-of-type {
         font-size: 1em;
     }
 
-    .newsTxtBox h3{
-        font-size:1em;
+    .countBox p:nth-of-type(2) {
+        font-size: 2em;
     }
 
-    #newsSlideWrap{
+    .countBox p:nth-of-type(2)>span {
+        font-size: 0.5em;
+    }
+
+    .countBox p:nth-of-type(3) {
+        font-size: 0.7em;
+    }
+
+    #newsTxt h2 {
+        font-size: 3em;
+    }
+
+    .newsBtn {
+        width: 150px;
+        left: -70px;
+        font-size: 1em;
+    }
+
+    .newsTxtBox h3 {
+        font-size: 1em;
+    }
+
+    #newsSlideWrap {
         width: 80%;
         height: 80%;
-        margin: 25% 10% ;
+        margin: 25% 10%;
     }
 
-    #controller_2 p{
+    #controller_2 p {
         font-size: 1.2em;
     }
-    
-    #controller_2 span{
-        font-size:1.2em;
-    }
-    
-    #controller_2 span:first-of-type{
-        font-size:1.5em;
+
+    #controller_2 span {
+        font-size: 1.2em;
     }
 
-    #footerImg{
+    #controller_2 span:first-of-type {
+        font-size: 1.5em;
+    }
+
+    #footerImg {
         margin-top: 20%;
     }
 
-    #footerImg h2{
-        margin-left:50px;
+    #footerImg h2 {
+        margin-left: 50px;
     }
 
-    #footerImg p{
+    #footerImg p {
         font-size: 0.8em;
         margin-left: 50px;
     }
 
-    .arrow{
+    .arrow {
         display: none;
     }
-    #footTxtWrap ul{
+
+    #footTxtWrap ul {
         margin-left: 15px;
     }
 
-    #footTxtWrap p{
+    #footTxtWrap p {
         margin-left: 15px;
     }
-    
+
 
 }
-

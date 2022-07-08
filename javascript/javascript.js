@@ -76,7 +76,7 @@ $(document).ready(function(){
 			$("#ham span").addClass("black");
 		}else{
 			$("header nav a").removeClass("black");
-			$("#ham span").removeClass("black")
+			$("#ham span").removeClass("black");
 		}
 	});
 });
@@ -124,15 +124,12 @@ if (window.matchMedia("(max-width:799px").matches){
 		$("header").hover(function(){
 			$("#nav_wrap").css({"backgroundColor":"black","opacity":"0.9"});
 			$("nav a").css({"color":"white"});
-			if($("header nav a").hasClass("black")){
-				$("#ham span").removeClass("black");
-			}
+			$("#ham span").css({"backgroundColor":"white"});
 		}, function(){
 			$("#nav_wrap").css({"backgroundColor":"","opacity":""});
 			$("nav a").css({"color":""});
-			if($("header nav a").hasClass("black")){
-				$("#ham span").addClass("black");
-			}
+			$("#ham span").css({"backgroundColor":""});
+
 		})
 	});
 }else if(window.matchMedia("(min-width:800px)").matches){
