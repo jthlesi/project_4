@@ -1,3 +1,225 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 ul,li,ol {list-style: none;}
 a {text-decoration: none; color:black}
+
+/* 네비게이션 */
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#nav_wrap{
+    width: 100%;
+    height: 100px;
+}
+
+.wrap{
+    width: 1420px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    width:200px;
+    height: 50px;
+    background: url(../img/logo.svg) center /cover no-repeat;
+    cursor: pointer;
+}
+
+nav{
+    width:calc(100% - 300px);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav>ul{
+    width: 100%;
+    position: relative;
+}
+
+nav>ul>li{
+    width:calc(100% / 6);
+    float: left;
+}
+
+nav a{
+    color: white;
+    font-size: 1.2em;
+}
+
+nav a.black{
+    color:black
+}
+
+nav a.black:hover{
+    color:white
+}
+
+.sub>li{
+    color: #999999;
+    line-height: 2.5em;
+    cursor: pointer;
+}
+
+.sub>li:hover{
+    color: white;
+}
+
+.nav_sub{
+    width: 100%;
+    position: absolute;
+    top:100px;
+    left: 0;
+    display: none;
+    border-top: 1px solid white;
+
+}
+
+.nav_sub .wrap{
+    justify-content: right;
+    align-items: flex-start;
+}
+
+#hamWrap{
+    display: none;
+    overflow: hidden;
+    width:60px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    top:20px;
+}
+
+#ham{
+    display: none;
+    position: relative;
+}
+
+#ham span{
+    display: block;
+    width:50px;
+    height: 5px;
+    background-color:white;
+    position: absolute;
+    margin: 10px 5px 10px 5px;
+}
+
+#ham span.black{
+    background-color: black;
+}
+
+#ham_1{
+    top:0px;
+    animation : ham_1 0.75s forwards;
+}
+
+@keyframes ham_1 {
+    0% {
+      transform : translateY(17.5px) rotate(45deg);
+    }
+    50% {
+      transform : translateY(17.5px) rotate(0);
+    }
+    100% {
+      transform : translateY(0) rotate(0);
+    }
+  }
+
+#ham_2{
+    top:17.5px;
+    opacity : 1;
+}
+
+#ham_3{
+    top:35px;
+    animation : ham_3 .75s forwards;
+}
+
+@keyframes ham_3 {
+    0% {
+      transform : translateY(-17.5px) rotate(-45deg);
+    }
+    50% {
+      transform : translateY(-17.5px) rotate(0);
+    }
+    100% {
+      transform : translateY(0) rotate(0);
+    }
+  }
+
+#ham_1.open {
+
+    animation : ham_1_open .75s forwards;
+  }
+  
+  @keyframes ham_1_open {
+    0% {
+      transform : translateY(0) rotate(0);
+    }
+    50% {
+      transform : translateY(17.5px) rotate(0);
+    }
+    100% {
+      transform : translateY(17.5px) rotate(45deg);
+    }
+  }
+
+#ham_2.open {
+    opacity : 0
+  }
+
+#ham_3.open {
+  
+    animation : ham_3_open .75s forwards;
+  }
+  
+  @keyframes ham_3_open {
+    0% {
+      transform : translateY(0) rotate(0);
+    }
+    50% {
+      transform : translateY(-17.5px) rotate(0);
+    }
+    100% {
+      transform : translateY(-17.5px) rotate(-45deg);
+    }
+  }
+
+.navHam{
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color:white;
+    width: 100%;
+    font-size: 2em;
+    padding: 15px 0px 0px 15px;
+    line-height: 2em;
+    cursor: pointer;
+    border-top: 1px solid white;
+}
+
+.hamSub{
+    display: none;
+    padding: 15px 0px 15px 15px;
+    line-height: 1.5em;
+    color: #999999;
+}
+
+.hamSub li:hover{
+    color: white;
+}
+
+.hamSub.open{
+    display: block;
+}
+
+.navHam.open{
+    display: block;
+}

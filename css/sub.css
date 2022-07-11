@@ -1,55 +1,166 @@
-.heart-rate {
-    width: 150px;
-    height: 73px;
-    position: relative;
-    margin: 20px auto;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins&display=swap');
 
-  .fade-in {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #FFFFFF;
-    top: 0;
-    right: 0;
-    animation: heartRateIn 2.5s linear infinite;
+p,div,h2,h3,h4,h5,span{
+    font-family:'Poppins','Noto Sans KR','돋움','Dotum','바탕','Batang','sans-serif'
+}
+
+#banner{
+  width: 100%;
+  height: 100%;
+  background: url(../img/sub/back_2.jpg) center /cover no-repeat;
+}
+
+#bannerWrap{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+#banner h2{
+  color: white;
+  font-size: 4em;
+  margin-bottom: 100px;
+}
+
+#bar{
+  width: 3px;
+  height: 150px;
+  background: rgba(255,255,255,0.3);
+}
+
+#moveBar{
+  width: 3px;
+  height: 50px;
+  background: white;
+  animation: moving 1.5s infinite linear alternate;
+}
+
+@keyframes moving {
+  from{
+    transform:translateY(0%);
   }
-  
-  .fade-out {
-    position: absolute;
-    width: 120%;
-    height: 100%;
-    top: 0;
-    left: -120%;
-    animation: heartRateOut 2.5s linear infinite;
-    background: rgba(255, 255, 255, 1);
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
+  to{
+    transform:translateY(200%);
   }
-  
-  @keyframes heartRateIn {
-    0% {
-      width: 100%;
-    }
-    50% {
-      width: 0;
-    }
-    100% {
-      width: 0;
-    }
+}
+
+#textBox{
+  width: 100%;
+  height: 500px;
+}
+
+#textBox h3{
+  font-size: 3em;
+  text-align: center;
+  margin: 100px 0 50px 0;
+}
+
+#subMenu{
+  width: 1420px;
+  height: 100px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuList{
+  float: left;
+  font-size: 2em;
+  margin-right: 25px;
+}
+
+.menuList:not(:last-child)::after{
+  content: "";
+  margin-left: 25px;
+  width: 1px;
+  height: 25px;
+  background: #ddd;
+  display: inline-block;
+}
+
+.menuList a{
+  color:black;
+}
+
+.menuList.active a{
+  color:#119891
+}
+
+h4{
+  margin: 130px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#imgBox{
+  width: 1420px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(../img/sub/back_sub.jpg) center /cover no-repeat;
+  border-radius: 250px;
+  background-attachment: fixed;
+}
+
+#imgWrap{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  border-radius: 250px;
+}
+
+#textWrap{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+h5{
+  padding-top: 200px;
+  margin-bottom: 100px;
+  color: #119891;
+  font-size: 2em;
+  text-align: center;
+}
+
+#imgWrap p {
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+}
+
+#arrow{
+  margin: 150px 0 0 0;
+  display:grid;
+  place-content: center;
+  animation: moving_2 1s infinite alternate;
+}
+
+@keyframes moving_2{
+  from{
+    transform:translateY(0%);
   }
-  
-  @keyframes heartRateOut {
-    0% {
-      left: -120%;
-    }
-    30% {
-      left: -120%;
-    }
-    100% {
-      left: 0;
-    }
+  to{
+    transform:translateY(50%);
   }
+}
+
+i{
+  font-size: 4em;
+  color: white;
+}
+
+.subTxt{
+  opacity: 0;
+}
+
+#txt_0{
+  padding-top: 200px;
+  margin-bottom: 100px;
+}

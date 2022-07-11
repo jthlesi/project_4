@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>혈액관리본부</title>
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sub.css">
@@ -14,14 +15,172 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 </head>
+
 <body>
-    <div class="heart-rate">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73" xml:space="preserve">
-            <polyline fill="none" stroke="#009B9E" stroke-width="3" stroke-miterlimit="10" points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486"
-            />
-          </svg>
-          <div class="fade-in"></div>
-          <div class="fade-out"></div>
-      </div>
+    <header>
+        <div id="nav_wrap">
+            <div class="wrap">
+                <div id="logo" onclick="location.href='index.html';"></div>
+                <nav>
+                    <ul>
+                        <li><a href="">헌혈지식</a></li>
+                        <li><a href="">헌혈참여</a></li>
+                        <li><a href="">헌혈활동</a></li>
+                        <li><a href="">커뮤니티</a></li>
+                        <li><a href="">홍보관</a></li>
+                        <li><a href="">혈액관리본부 소개</a></li>
+                    </ul>
+                    <div id="hamWrap">
+                        <div id="ham">
+                            <span id="ham_1"></span>
+                            <span id="ham_2"></span>
+                            <span id="ham_3"></span>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="nav_sub">
+            <div class="wrap">
+                <ul class="sub">
+                    <li>헌혈의 필요성</li>
+                    <li>오해와 진실</li>
+                    <li>헌혈과정</li>
+                    <li>헌혈관리시스템</li>
+                    <li>혈액상식</li>
+                </ul>
+                <ul class="sub">
+                    <li>헌혈의집 찾기</li>
+                    <li>헌혈버스 찾기</li>
+                    <li>헌혈예약</li>
+                    <li>전자문진</li>
+                </ul>
+                <ul class="sub">
+                    <li>ABO Friends</li>
+                    <li>나눔히어로즈</li>
+                    <li>단체헌혈</li>
+                    <li>조혈모세포 기증</li>
+                </ul>
+                <ul class="sub">
+                    <li>감동이야기</li>
+                    <li>FAQ</li>
+                    <li>고객의 소리</li>
+                    <li>설문조사</li>
+                </ul>
+                <ul class="sub">
+                    <li>세계헌혈자의 날</li>
+                    <li>헌혈홍보대사</li>
+                    <li>홍보물</li>
+                    <li>갤러리</li>
+                    <li>공모전</li>
+                </ul>
+                <ul class="sub">
+                    <li>혈액관리본부 소개</li>
+                    <li>연혁</li>
+                    <li>조직도</li>
+                    <li>캐릭터</li>
+                    <li>오시는길</li>
+                </ul>
+            </div>
+        </div>
+        <div class="navHam">
+            <ul>
+                <li>헌혈지식
+                    <ul class="hamSub">
+                        <li>헌혈의 필요성</li>
+                        <li>오해와 진실</li>
+                        <li>헌혈과정</li>
+                        <li>헌혈관리시스템</li>
+                        <li>혈액상식</li>
+                    </ul>
+                </li>
+                <li>헌혈참여
+                    <ul class="hamSub">
+                        <li>헌혈의집 찾기</li>
+                        <li>헌혈버스 찾기</li>
+                        <li>헌혈예약</li>
+                        <li>전자문진</li>
+                    </ul>
+                </li>
+                <li>헌혈활동
+                    <ul class="hamSub">
+                        <li>ABO Friends</li>
+                        <li>나눔히어로즈</li>
+                        <li>단체헌혈</li>
+                        <li>조혈모세포 기증</li>
+                    </ul>
+                </li>
+                <li>커뮤니티
+                    <ul class="hamSub">
+                        <li>감동이야기</li>
+                        <li>FAQ</li>
+                        <li>고객의 소리</li>
+                        <li>설문조사</li>
+                    </ul>
+                </li>
+                <li>홍보관
+                    <ul class="hamSub">
+                        <li>세계헌혈자의 날</li>
+                        <li>헌혈홍보대사</li>
+                        <li>홍보물</li>
+                        <li>갤러리</li>
+                        <li>공모전</li>
+                    </ul>
+                </li>
+                <li>혈액관리본부 소개
+                    <ul class="hamSub">
+                        <li>혈액관리본부 소개</li>
+                        <li>연혁</li>
+                        <li>조직도</li>
+                        <li>캐릭터</li>
+                        <li>오시는길</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="banner">
+        <div id="bannerWrap">
+            <h2>헌혈의 필요성</h2>
+            <div id="bar">
+                <div id="moveBar"></div>
+            </div>
+        </div>
+    </div>
+    <div id="textBox">
+        <h3>헌혈 지식</h3>
+        <div id="subMenu">
+            <ul>
+                <li class="menuList"><a href="">헌혈의 필요성</a></li>
+                <li class="menuList"><a href="">오해와 진실</a></li>
+                <li class="menuList"><a href="">헌혈과정</a></li>
+                <li class="menuList"><a href="">헌혈관리시스템</a></li>
+                <li class="menuList"><a href="">혈액상식</a></li>
+            </ul>
+        </div>
+        <h4>헌혈의 필요성</h4>
+    </div>
+    <div id="imgBox">
+        <div id="imgWrap">
+            <div id="textWrap">
+                <h5>헌혈이란</h5>
+                <p>혈액의 성분 중 한 가지 이상이 부족하여 건강과 생명을 위협받는 다른 사람을 위해<br>건강한 사람이 자유의사에 따라 아무 대가 없이 자신의 혈액을 기증하는 사랑의 실천이자<br>생명을 나누는 고귀한 행동입니다.</p>
+                <div id="arrow"><i class="fa-solid fa-angle-down"></i></div>
+                <div id="textWrap_2">
+                    <h5 class="subTxt" id ="txt_0">헌혈의 필요성</h5>
+                    <p class="subTxt" id ="txt_1">헌혈은 수혈이 필요한 환자의 생명을 구하는 유일한 수단입니다. 혈액은 아직 인공적으로 만들 수 있거나, 대체할 물질이 존재하지 않습니다.</p>
+                    <p class="subTxt" id ="txt_2">생명을 사고 팔 수 없다는 인류 공통의 윤리에 기반하여, 세계 각국은 혈액의 상업적 유통을 법으로 규제하고 있습니다.</p>
+                    <p class="subTxt" id ="txt_3">헌혈한 혈액은 장기간 보관이 불가능합니다.(농축적혈구 35일, 혈소판 5일) 따라서 적정 혈액보유량인 5일분을 유지하기 위해 헌혈자분들의 지속적이고 꾸준한 헌혈이 필요합니다.</p>
+                    <p class="subTxt" id ="txt_4">우리나라는 수혈용혈액의 경우 자급자족하고 있지만, 의약품의 원재료가 되는 혈장성분의 경우 외국으로부터 수입을 하고 있습니다.</p>
+                    <p class="subTxt" id ="txt_5">외국으로부터 수입하지 않고 혈액을 자급자족하기 위해서는 연간 약 300만명의 헌혈자가 헌혈에 참여해야 합니다</p>
+                    <p class="subTxt" id ="txt_6">우리는 언제 수혈을 받을 상황에 처할지 모릅니다. 건강할 때 헌혈하는 것은 자신과 사랑하는 가족을 위하여, 더 나아가 모두를 위한 사랑의 실천입니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="javascript/sub.js"></script>
 </body>
 </html>
