@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sub.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media_sub.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -151,22 +151,44 @@
     <div id="textBox">
         <h3>헌혈 지식</h3>
         <div id="subMenu">
-            <ul>
+            <ul id="floatMenu">
                 <li class="menuList"><a href="">헌혈의 필요성</a></li>
                 <li class="menuList"><a href="">오해와 진실</a></li>
                 <li class="menuList"><a href="">헌혈과정</a></li>
                 <li class="menuList"><a href="">헌혈관리시스템</a></li>
                 <li class="menuList"><a href="">혈액상식</a></li>
             </ul>
+            <ul id="slideMenu">
+                <p>헌혈의 필요성<i class="fa-solid fa-angle-down"></i>
+                </p>
+            </ul>
         </div>
-        <h4>헌혈의 필요성</h4>
+        <div id="listWrap">
+            <div class="slideList"><a href="">
+                    <p>헌혈의 필요성</p>
+                </a></div>
+            <div class="slideList"><a href="">
+                    <p>오해와 진실</p>
+                </a></div>
+            <div class="slideList"><a href="">
+                    <p>헌혈과정</p>
+                </a></div>
+            <div class="slideList"><a href="">
+                    <p>헌혈관리시스템</p>
+                </a></div>
+            <div class="slideList"><a href="">
+                    <p>혈액상식</p>
+                </a></div>
+        </div>
     </div>
+    <div><h4>헌혈의 필요성</h4></div>
     <div id="imgBox">
         <div id="imgWrap">
             <div id="textWrap">
                 <h5>헌혈이란</h5>
                 <p>혈액의 성분 중 한 가지 이상이 부족하여 건강과 생명을 위협받는 다른 사람을 위해<br>건강한 사람이 자유의사에 따라 아무 대가 없이 자신의 혈액을 기증하는 사랑의 실천이자<br>생명을 나누는 고귀한 행동입니다.</p>
                 <div id="arrow"><i class="fa-solid fa-angle-down"></i></div>
+            </div>
                 <div id="textWrap_2">
                     <h5 class="subTxt" id ="txt_0">헌혈의 필요성</h5>
                     <p class="subTxt" id ="txt_1">헌혈은 수혈이 필요한 환자의 생명을 구하는 유일한 수단입니다. 혈액은 아직 인공적으로 만들 수 있거나, 대체할 물질이 존재하지 않습니다.</p>
@@ -176,10 +198,28 @@
                     <p class="subTxt" id ="txt_5">외국으로부터 수입하지 않고 혈액을 자급자족하기 위해서는 연간 약 300만명의 헌혈자가 헌혈에 참여해야 합니다</p>
                     <p class="subTxt" id ="txt_6">우리는 언제 수혈을 받을 상황에 처할지 모릅니다. 건강할 때 헌혈하는 것은 자신과 사랑하는 가족을 위하여, 더 나아가 모두를 위한 사랑의 실천입니다.</p>
                 </div>
-            </div>
+            
         </div>
     </div>
-
+    <section id="footer">
+        <div id="footerTxt">
+            <div id="footTxtWrap">
+                <div id="footLogo"></div>
+                <ul>
+                    <li>개인정보처리방침</li>
+                    <li>이용약관</li>
+                    <li>책임의 한계와 법적고지</li>
+                    <li>이메일무단수집거부</li>
+                    <li>칭찬하기</li>
+                    <li>고객의 소리</li>
+                    <li>안전신문고</li>
+                    <li>윤리위반신고</li>
+                </ul>
+                <p>26465 강원도 원주시 혁신로 50 대한적십자사 혈액관리본부</p>
+                <p>COPYRIGHT(C) KOREAN Redcross Blood Services. ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </section>
 
     <script src="javascript/sub.js"></script>
 </body>
