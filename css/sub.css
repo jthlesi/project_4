@@ -327,10 +327,10 @@ h5{
   background: url(../img/sub/pro_3.png) left /cover no-repeat;
 }
 #pro_4{
-  background: url(../img/sub/pro_4.jpg) left /cover no-repeat;
+  background: url(../img/sub/pro_4.jpg) center /cover no-repeat;
 }
 #pro_5{
-  background: url(../img/sub/pro_5.jpg) left /cover no-repeat;
+  background: url(../img/sub/pro_5.jpg) -500px 0 /cover no-repeat;
 }
 #pro_6{
   background: url(../img/sub/pro_6.jpg) left /cover no-repeat;
