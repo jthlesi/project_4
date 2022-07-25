@@ -152,21 +152,21 @@ $(document).ready(function(){
 
 $(document).on("scroll", function(){
 	if($(window).scrollTop() > ($("#list_1").position().top)){
-		$("#pro_1").show().stop().animate({"width":"1300px","height":"1300px","left":"30%"});
+		$("#pro_1").show().stop().animate({"width":"1300px","height":"1300px","left":"30%"},"fast");
 	} 
 	if($(window).scrollTop() > ($("#list_2").position().top)){
-		$("#pro_2").show().stop().animate({"width":"1300px","height":"1300px","left":"-30%"});
+		$("#pro_2").show().stop().animate({"width":"1300px","height":"1300px","left":"-30%"},"fast");
 	} 
 	if($(window).scrollTop() > ($("#list_3").position().top)){
-		$("#pro_3").show().stop().animate({"width":"1300px","height":"1300px","left":"30%"});
+		$("#pro_3").show().stop().animate({"width":"1300px","height":"1300px","left":"30%"},"fast");
 	}
 	if($(window).scrollTop() > ($("#list_4").position().top)){
-		$("#pro_4").show().stop().animate({"width":"1300px","height":"1300px","left":"-30%"});
+		$("#pro_4").show().stop().animate({"width":"1300px","height":"1300px","left":"-30%"},"fast");
 	} 
 	if($(window).scrollTop() > ($("#list_5").position().top)){
-		$("#pro_5").show().stop().animate({"width":"1300px","height":"1300px","left":"30%"});
+		$("#pro_5").show().stop().animate({"width":"1300px","height":"1300px","left":"30%"},"fast");
 	}
 	if($(window).scrollTop() > ($("#list_6").position().top)){
-		$("#pro_6").show().stop().animate({"width":"1300px","height":"1300px","left":"-30%"});
+		$("#pro_6").show().stop().animate({"width":"1300px","height":"1300px","left":"-30%"},"fast");
 	} 
 })

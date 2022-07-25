@@ -217,7 +217,7 @@ h5{
   display: none;
 } */
 
-#tab_1, #tab_2{
+#tab_1, #tab_2, #tab_3{
   display: none;
 }
 
@@ -334,6 +334,160 @@ h5{
 }
 #pro_6{
   background: url(../img/sub/pro_6.jpg) left /cover no-repeat;
+}
+
+#imgBox_4 {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.content_box {
+  width: 48%;
+  height: 400px;
+  background: black;
+  margin: 0px 1% 20px 1%;
+  position: relative;
+}
+
+.content_text {
+  height: 60%;
+  margin: 30px 30px 0 30px;
+  color: white;
+}
+
+.content_text h2 {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+
+.content_text p {
+  color :#ddd
+}
+
+.ani_1_circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  margin: 0px 30px 30px 30px;
+}
+
+#black_circle {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  border: 1px solid white;
+  animation: circle_1 1s infinite linear alternate;
+}
+
+@keyframes circle_1{
+  from {
+    transform:translateX(0%);
+  }
+  to {
+    transform:translateX(40%)
+  }
+}
+
+#red_circle {
+  background: #f82c2d;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  animation: circle_2 1s infinite linear alternate;
+}
+
+@keyframes circle_2{
+  from {
+    transform:translateX(0%);
+  }
+  to {
+    transform:translateX(-40%)
+  }
+}
+
+.ani_2_box {
+  width: 54px;
+  height: 54px;
+}
+
+#black_box {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  border: 1px solid white;
+  margin: 0px 30px 30px 30px;
+}
+
+#red_box {
+  background: #f82c2d;
+  position: relative;
+  left: 0;
+  animation: box_1 1.5s infinite linear alternate;
+}
+
+@keyframes box_1 {
+  from {
+    transform: scale(0%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+
+.ani_3_dot{
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f82c2d;
+  margin: 0px 30px 30px 30px;
+}
+
+#dot_1 {
+  bottom: 30px;
+  animation: dot_1 0.7s infinite linear alternate;
+}
+
+@keyframes dot_1 {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(15px);
+  }
+}
+
+#dot_2 {
+  left:20px;
+  bottom:35px;
+  animation: dot_2 1s infinite linear alternate;
+}
+
+@keyframes dot_2 {
+  from {
+    transform: translateY(20px);
+  }
+
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+#dot_3 {
+  left:40px;
+  bottom:25px;
+  animation: dot_3 1s infinite linear alternate;
+}
+
+@keyframes dot_3 {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
 
 #footer{
