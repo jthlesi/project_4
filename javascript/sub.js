@@ -9,7 +9,6 @@ if (window.matchMedia("(max-width:799px").matches) {
 			$("#nav_wrap").css({ "backgroundColor": "", "opacity": "" });
 			$("nav a").css({ "color": "" });
 			$("#ham span").css({ "backgroundColor": "" });
-
 		})
 	});
 } else if (window.matchMedia("(min-width:800px)").matches) {
@@ -103,6 +102,7 @@ $(document).on("scroll", function(){
 			$("#imgWrap").stop().animate({"border-radius":"0"},"slow");
 		};
 	}
+
 	if($(window).scrollTop() > ($("#textWrap>p").position().top)){
 		$("#txt_0").stop().animate({opacity:1},"fast",function(){
 			$("#txt_1").delay(100).stop().animate({opacity:1},"fast",function(){
@@ -149,50 +149,49 @@ if (window.matchMedia("(max-width:599px").matches) {
 	$(".menuList, .slideList").click(function(){
 		$(document).on("scroll", function(){
 			if($(window).scrollTop() > ($("#list_1").position().top)){
-				$("#pro_1").show().stop().animate({"width":"50%","height":"66%","left":"50%","top":"50%"},"fast");
+				$("#pro_1").show().stop().animate({"width":"50%","height":"80%","left":"50%","top":"50%"},"fast");
 			} 
 			if($(window).scrollTop() > ($("#list_2").position().top)){
-				$("#pro_2").show().stop().animate({"width":"50%","height":"66%","left":"20%","top":"50%"},"fast");
+				$("#pro_2").show().stop().animate({"width":"50%","height":"80%","left":"20%","top":"50%"},"fast");
 			} 
 			if($(window).scrollTop() > ($("#list_3").position().top)){
-				$("#pro_3").show().stop().animate({"width":"50%","height":"66%","left":"50%","top":"50%"},"fast");
+				$("#pro_3").show().stop().animate({"width":"50%","height":"80%","left":"50%","top":"50%"},"fast");
 			}
 			if($(window).scrollTop() > ($("#list_4").position().top)){
-				$("#pro_4").show().stop().animate({"width":"50%","height":"66%","left":"20%","top":"50%"},"fast");
+				$("#pro_4").show().stop().animate({"width":"50%","height":"80%","left":"20%","top":"50%"},"fast");
 			} 
 			if($(window).scrollTop() > ($("#list_5").position().top)){
-				$("#pro_5").show().stop().animate({"width":"50%","height":"66%","left":"50%","top":"50%"},"fast");
+				$("#pro_5").show().stop().animate({"width":"50%","height":"80%","left":"50%","top":"50%"},"fast");
 			}
 			if($(window).scrollTop() > ($("#list_6").position().top)){
-				$("#pro_6").show().stop().animate({"width":"50%","height":"66%","left":"20%","top":"50%"},"fast");
+				$("#pro_6").show().stop().animate({"width":"50%","height":"80%","left":"20%","top":"50%"},"fast");
 			} 
 		})
 	}) 
-}else if (window.matchMedia("(min-width:600px) and (max-width:799px").matches) {
+} else if (window.matchMedia("(min-width:600px) and (max-width:799px").matches) {
 	$(".menuList, .slideList").click(function(){
 		$(document).on("scroll", function(){
 			if($(window).scrollTop() > ($("#list_1").position().top)){
-				$("#pro_1").show().stop().animate({"width":"40%","height":"75%","left":"50%","top":"50%"},"fast");
+				$("#pro_1").show().stop().animate({"width":"50%","height":"120%","left":"50%","top":"40%"},"fast");
 			} 
 			if($(window).scrollTop() > ($("#list_2").position().top)){
-				$("#pro_2").show().stop().animate({"width":"40%","height":"75%","left":"20%","top":"50%"},"fast");
+				$("#pro_2").show().stop().animate({"width":"50%","height":"120%","left":"20%","top":"40%"},"fast");
 			} 
 			if($(window).scrollTop() > ($("#list_3").position().top)){
-				$("#pro_3").show().stop().animate({"width":"40%","height":"75%","left":"50%","top":"50%"},"fast");
+				$("#pro_3").show().stop().animate({"width":"50%","height":"120%","left":"50%","top":"40%"},"fast");
 			}
 			if($(window).scrollTop() > ($("#list_4").position().top)){
-				$("#pro_4").show().stop().animate({"width":"40%","height":"75%","left":"20%","top":"50%"},"fast");
+				$("#pro_4").show().stop().animate({"width":"50%","height":"120%","left":"20%","top":"40%"},"fast");
 			} 
 			if($(window).scrollTop() > ($("#list_5").position().top)){
-				$("#pro_5").show().stop().animate({"width":"40%","height":"75%","left":"50%","top":"50%"},"fast");
+				$("#pro_5").show().stop().animate({"width":"50%","height":"120%","left":"50%","top":"40%"},"fast");
 			}
 			if($(window).scrollTop() > ($("#list_6").position().top)){
-				$("#pro_6").show().stop().animate({"width":"40%","height":"75%","left":"20%","top":"50%"},"fast");
+				$("#pro_6").show().stop().animate({"width":"50%","height":"120%","left":"20%","top":"40%"},"fast");
 			} 
 		})
 	})
-
-}else if (window.matchMedia("(min-width:800px) and (max-width:1419px").matches) {
+} else if (window.matchMedia("(min-width:800px) and (max-width:1419px").matches) {
 	$(".menuList, .slideList").click(function(){
 		$(document).on("scroll", function(){
 			if($(window).scrollTop() > ($("#list_1").position().top)){
@@ -215,8 +214,7 @@ if (window.matchMedia("(max-width:599px").matches) {
 			} 
 		})
 	})
-
-}else if (window.matchMedia("(min-width:1420px").matches){
+} else if (window.matchMedia("(min-width:1420px").matches){
 	$(".menuList, .slideList").click(function(){
 		$(document).on("scroll", function(){
 			if($(window).scrollTop() > ($("#list_1").position().top)){
@@ -248,15 +246,15 @@ $(document).ready(function(){
 })
 
 if (window.matchMedia("(min-width:800px").matches){
-$(document).on("scroll", function(){
-	if($(window).scrollTop() > ($("#supply_2").position().top)){
-		$("#left_wrap").addClass("fixed").removeClass("absolute_top").removeClass("absolute_bottom");
-	} 
-	if($(window).scrollTop() > ($(".process_title").eq(6).position().top+640-$(window).height())){
-		$("#left_wrap").addClass("absolute_bottom").removeClass("absolute_top").removeClass("fixed");
-	} 
-	if($(window).scrollTop() < ($("#supply_2").position().top)){
-		$("#left_wrap").addClass("absolute_top").removeClass("fixed").removeClass("absolute_bottom");
-	} 
-})
+	$(document).on("scroll", function(){
+		if($(window).scrollTop() > ($("#supply_2").position().top)){
+			$("#left_wrap").addClass("fixed").removeClass("absolute_top").removeClass("absolute_bottom");
+		} 
+		if($(window).scrollTop() > ($(".process_title").eq(6).position().top+640-$(window).height())){
+			$("#left_wrap").addClass("absolute_bottom").removeClass("absolute_top").removeClass("fixed");
+		} 
+		if($(window).scrollTop() < ($("#supply_2").position().top)){
+			$("#left_wrap").addClass("absolute_top").removeClass("fixed").removeClass("absolute_bottom");
+		} 
+	})
 }

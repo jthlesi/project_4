@@ -102,7 +102,7 @@
         padding: 0 10px 100px 10px;
     }
     .process {
-        height: 1000px;
+        height: 600px;
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
@@ -117,21 +117,26 @@
         height: 20%;
         font-size: 1em;
         justify-content: flex-start;
-        z-index: 10px;
+        z-index: 10;
+        padding-right: 15px;
     }
+
+    .proTxt:nth-of-type(even){
+        padding-left: 15px;
+      }
 
     .proImg {
         width: 100%;
         height: 40%;
-        opacity: 0.7;
+        opacity: 0.5;
     }
 
     #pro_2 {
-        background: url(../img/sub/pro_2.png) -20px 0 /cover no-repeat;
+        background: url(../img/sub/pro_2.png) center /cover no-repeat;
     }
 
     #pro_5{
-        background: url(../img/sub/pro_5.jpg) -20px 0 /cover no-repeat;
+        background: url(../img/sub/pro_5.jpg)  0 /cover no-repeat;
       }
 
     .content_box {
@@ -254,7 +259,7 @@
         width: 90%;
     }
 
-       #floatMenu{
+    #floatMenu{
         display: none;
     }
 
@@ -300,9 +305,10 @@
     }
 
     .process {
-        height: 1000px;
+        height: 700px;
         flex-direction: column-reverse;
         justify-content: flex-end;
+        position: relative;
     }
 
     #list_2, #list_4, #list_6{
@@ -315,8 +321,9 @@
         height: 20%;
         font-size: 1em;
         justify-content: flex-start;
-        z-index: 10px;
+        z-index: 10;
         padding-right: 20px;
+        position: relative;
     }
 
     .proTxt:nth-of-type(even){
@@ -327,7 +334,12 @@
     .proImg {
         width: 100%;
         height: 40%;
-        opacity: 0.7;
+    }
+
+    .proWrap {
+        position: relative;
+        z-index: 1;
+        opacity: 0.5;
     }
 
     #pro_2 {
@@ -335,7 +347,7 @@
     }
 
     #pro_5{
-        background: url(../img/sub/pro_5.jpg) -20px 0 /cover no-repeat;
+        background: url(../img/sub/pro_5.jpg) center /cover no-repeat;
       }
 
     .content_box {
@@ -403,9 +415,6 @@
         background-size: 130%!important;
         margin: 20px 0;
     }
-
-
-
 
     #footTxtWrap ul {
         margin: 0px 20px;
@@ -522,8 +531,6 @@
         height: auto;
     }
     .su_left{
-
-
         padding-left: 20px;
     }
 
@@ -532,11 +539,10 @@
     }
     
     .su_left h2 {
-    font-size: 2em;
+        font-size: 2em;
     }
       
     #right_1{
-
         height: auto;
         padding-left: 20px;
     }
@@ -572,5 +578,4 @@
     #footTxtWrap p {
         margin-left: 15px;
     }
-
 }

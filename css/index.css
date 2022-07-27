@@ -243,7 +243,7 @@ li.active{
     font-size: 1em;
 }
 
-#searchBtn{
+.searchBtn{
     position: relative;
     top: 55%;
     left: 100px;
@@ -257,7 +257,7 @@ li.active{
     cursor: pointer;
 }
 
-#searchBtn:hover{
+.searchBtn:hover{
     color: white;
     background: #f82c2d;
 }

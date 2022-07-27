@@ -626,11 +626,11 @@ h5{
 
 @keyframes squ_1 {
   from {
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
   to {
     border-radius: 0px;
-    transform: scaleY(900%);
+    transform: scaleY(9);
   }
 }
 
@@ -642,11 +642,11 @@ h5{
 
 @keyframes squ_2 {
   from {
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
   to {
     border-radius: 0px;
-    transform: scaleY(900%);
+    transform: scaleY(9);
   }
 }
 
@@ -657,11 +657,11 @@ h5{
 
 @keyframes squ_3 {
   from {
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
   to {
     border-radius: 0px;
-    transform: scaleY(900%);
+    transform: scaleY(9);
   }
 }
 
@@ -673,11 +673,11 @@ h5{
 
 @keyframes squ_4 {
   from {
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
   to {
     border-radius: 0px;
-    transform: scaleY(900%);
+    transform: scaleY(9);
   }
 }
 
@@ -688,11 +688,11 @@ h5{
 
 @keyframes squ_5 {
   from {
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
   to {
     border-radius: 0px;
-    transform: scaleY(900%);
+    transform: scaleY(9);
   }
 }
 
@@ -704,11 +704,11 @@ h5{
 
 @keyframes squ_6 {
   from {
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
   to {
     border-radius: 0px;
-    transform: scaleY(900%);
+    transform: scaleY(9);
   }
 }
 
@@ -719,11 +719,11 @@ h5{
 
 @keyframes squ_7 {
   from {
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
   to {
     border-radius: 0px;
-    transform: scaleY(900%);
+    transform: scaleY(9);
   }
 }
 
@@ -735,11 +735,11 @@ h5{
 
 @keyframes squ_8 {
   from {
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
   to {
     border-radius: 0px;
-    transform: scaleY(900%);
+    transform: scaleY(9);
   }
 }
 
