@@ -216,7 +216,7 @@ if (window.matchMedia("(max-width:599px").matches) {
 		})
 	})
 
-}else if (window.matchMedia("(min-width:800px").matches){
+}else if (window.matchMedia("(min-width:1420px").matches){
 	$(".menuList, .slideList").click(function(){
 		$(document).on("scroll", function(){
 			if($(window).scrollTop() > ($("#list_1").position().top)){
