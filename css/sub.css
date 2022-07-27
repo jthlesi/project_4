@@ -217,6 +217,7 @@ h5{
   display: none;
 }
 
+
 #imgBox_2{
   background: url(../img/sub/back_tab_2.jpg) center /cover no-repeat;
   border-radius: 0;
@@ -333,6 +334,7 @@ h5{
 }
 
 #imgBox_4 {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   height: auto;
@@ -401,7 +403,6 @@ h5{
     transform:translateX(-40%)
   }
 }
-
 
 #black_box {
   width: 54px;
@@ -694,6 +695,7 @@ h5{
     transform: scaleY(900%);
   }
 }
+
 #squ_6 {
   left:35px;
   animation: squ_6 2s infinite linear alternate;
@@ -709,6 +711,7 @@ h5{
     transform: scaleY(900%);
   }
 }
+
 #squ_7 {
   left:42px;
   animation: squ_7 2.2s infinite linear alternate;
@@ -723,6 +726,7 @@ h5{
     transform: scaleY(900%);
   }
 }
+
 #squ_8 {
   left:49px;
   animation: squ_8 2.4s infinite linear alternate;
@@ -740,6 +744,7 @@ h5{
 }
 
 #tab_5{
+  width: 100%;
   height: auto;
 }
 
@@ -751,6 +756,7 @@ h5{
   display: flex;
   height: auto;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 #supply_1 {
@@ -760,10 +766,6 @@ h5{
 
 .su_left {
   width: 20%;
-  height: 500px;
-}
-
-#left_1 {
   height: 500px;
 }
 
