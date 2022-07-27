@@ -48,12 +48,12 @@ $(document).ready(function () {
 		var pageActive = $(".page ul li.active");
 		var pageIndex = pageActive.index();
 		endY = event.originalEvent.changedTouches[0].screenY;
-		if (startY - endY > 20) {
+		if (endY - startY > 20) {
 			if (pageIndex > 0) {
 				pageActive.prev().addClass("active").siblings().removeClass("active");
 				$("#fullpage").stop().animate({ "top": -height * (pageIndex - 1) + "px" }, 700, "swing");
 			}
-		} else if (endY - startY > 20) {
+		} else if (startY - endY > 20) {
 			if (pageIndex < $(".page ul li").length - 1) {
 				pageActive.next().addClass("active").siblings().removeClass("active");
 				$("#fullpage").stop().animate({ "top": -height * (pageIndex + 1) + "px" }, 700, "swing");
